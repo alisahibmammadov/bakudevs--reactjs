@@ -31,4 +31,10 @@ body {
 }
 .xmark i {
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar-mobile-menu {
+    padding: 33px 50px;
+  }
 }/*# sourceMappingURL=NavbarMobileMenu.css.map */
