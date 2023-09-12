@@ -8,9 +8,17 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .xmark {
   background: red;
   width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+  .nav {
+    display: none;
+  }
 }/*# sourceMappingURL=NavbarMobileMenu.css.map */

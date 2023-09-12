@@ -6,6 +6,15 @@ import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
 
 function App() {
   const [menu,setMenu] = useState(false)
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      setMenu(false);
+    }
+  });
+  // const screenWidth = window.innerWidth
+  // if(screenWidth > 768) {
+  //    setMenu(false)
+  // }
   return (
     <div className="App">
       <BrowserRouter>
