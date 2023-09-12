@@ -17,7 +17,8 @@ body{
     background: red;
 }
 .xmark-row{
-    width: 100%;
+    min-width: 100%;
+    background-color: green;
 }
 .xmark{
     display: flex;
