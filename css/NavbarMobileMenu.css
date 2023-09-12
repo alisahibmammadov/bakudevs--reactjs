@@ -3,19 +3,20 @@ body {
 }
 
 .navbar-mobile-menu {
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: default;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  border-radius: default;
   background: var(--bg-color);
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
-  min-width: 100vw;
-  min-height: 100vh;
   padding: 33px 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 .xmark-row {
@@ -27,8 +28,9 @@ body {
 
 .xmark {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+  gap: default;
   align-self: flex-end;
 }
 .xmark i {
@@ -44,17 +46,19 @@ body {
 .uiux-row {
   display: flex;
   align-items: flex-start;
+  justify-content: default;
+  gap: default;
 }
 .frontend-row ul li,
 .backend-row ul li,
 .uiux-row ul li {
-  list-style-type: none;
-  color: #939393;
   font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  text-decoration: default;
+  color: var(--list-color);
+  font-size: 20px;
+  font-weight: 500;
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 450px) {
@@ -63,24 +67,26 @@ body {
   }
 }
 .mobile-menu-bottom {
-  width: 100% !important;
   display: flex;
-  flex-direction: column;
+  align-items: default;
   justify-content: flex-end;
   gap: 20px;
-  border-top: 1px solid #dde5e7;
+  width: 100% !important;
+  flex-direction: column;
+  border-top: 1px solid var(--border-color);
   padding: 20px 0 0;
 }
 .mobile-menu-bottom .mobile-wishlist {
   display: flex;
   align-items: center;
+  justify-content: default;
   gap: 14px;
 }
 .mobile-menu-bottom .mobile-wishlist h2 {
-  color: #1b2221;
   font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
   line-height: normal;
+  text-decoration: default;
+  color: var(--dark-charcoal);
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=NavbarMobileMenu.css.map */

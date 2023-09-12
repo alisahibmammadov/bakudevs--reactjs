@@ -1,20 +1,47 @@
+// Mixin Start
+@mixin flexbox($display, $align-items, $justify-content, $gap) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin text-properties(
+  $font-family,
+  $line-height,
+  $text-decoration,
+  $color,
+  $font-size,
+  $font-weight
+) {
+  font-family: $font-family;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  color: var($color);
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin box-model($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+// Mixin End
+
 body {
   position: relative;
 }
 .navbar-mobile-menu {
-  position: relative;
+  @include flexbox(flex, flex-start, space-between, default);
+  flex-direction: column;
+  @include box-model(100vw, 100vh, default);
   background: var(--bg-color);
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
-  min-width: 100vw;
-  min-height: 100vh;
   padding: 33px 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 .xmark-row {
   min-width: 100%;
@@ -23,9 +50,7 @@ body {
   right: 10%;
 }
 .xmark {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flexbox(flex, center, flex-end, default);
   align-self: flex-end;
   i {
     font-size: 2.5rem;
@@ -38,21 +63,13 @@ body {
 .frontend-row,
 .backend-row,
 .uiux-row {
-  display: flex;
-  align-items: flex-start;
+  @include flexbox(flex, flex-start, default, default);
   ul li {
+    @include text-properties(Mulish, normal, default, --list-color, 20px, 500);
     list-style-type: none;
-    color: #939393;
-    font-family: Mulish;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
   }
 }
 
-@media only screen and (min-width: 767px) {
-}
 @media only screen and (max-width: 450px) {
   .navbar-mobile-menu {
     padding: 33px 50px;
@@ -60,24 +77,22 @@ body {
 }
 
 .mobile-menu-bottom {
+  @include flexbox(flex, default, flex-end, 20px);
   width: 100% !important;
-  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 20px;
-  border-top: 1px solid #dde5e7;
+  border-top: 1px solid var(--border-color);
   padding: 20px 0 0;
   .mobile-wishlist {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+    @include flexbox(flex, center, default, 14px);
     h2 {
-      color: #1b2221;
-      font-family: Mulish;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
+      @include text-properties(
+        Mulish,
+        normal,
+        default,
+        --dark-charcoal,
+        20px,
+        600
+      );
     }
   }
 }

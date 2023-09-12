@@ -15,6 +15,10 @@
   --light-color-hover: #333;
 
   --bg-color:#fbfcfc;
+
+  --border-color:#dde5e7;
+
+  --list-color:#939393;
 }
 * {
   margin: 0;

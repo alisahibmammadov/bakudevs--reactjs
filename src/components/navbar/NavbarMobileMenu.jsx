@@ -8,6 +8,7 @@ function NavbarMobileMenu({ menu, setMenu }) {
   const [frontend, setFrontend] = useState(true);
   const [backend, setBackend] = useState(false);
   const [uiux, setUiux] = useState(false);
+
   return (
     <Container className="navbar-mobile-menu">
       <Row className="xmark-row">
@@ -95,18 +96,20 @@ function NavbarMobileMenu({ menu, setMenu }) {
         <Row>
           <Col>
             <div className="mobile-wishlist">
-              <h2><i className="fa-regular fa-heart"></i> İstək siyahısı</h2>
+              <h2>
+                <i className="fa-regular fa-heart"></i> İstək siyahısı
+              </h2>
             </div>
           </Col>
         </Row>
         <Row>
           <Col>
-              <LoginBtn />
+            <LoginBtn />
           </Col>
         </Row>
         <Row>
           <Col>
-              <SignupBtn />
+            <SignupBtn />
           </Col>
         </Row>
       </Container>
