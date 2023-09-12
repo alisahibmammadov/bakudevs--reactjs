@@ -13,12 +13,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    background: red;
+    justify-content: flex-start;
 }
 .xmark-row{
     min-width: 100%;
-    background-color: green;
 }
 .xmark{
     display: flex;
