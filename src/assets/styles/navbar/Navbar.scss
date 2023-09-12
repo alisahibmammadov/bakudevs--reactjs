@@ -73,29 +73,6 @@
   }
   .navbar__btn-boxes {
     @include flexbox(flex, center, default, 11px);
-    .login {
-      @include flexbox(flex, center, center, 6px);
-      @include text-properties(Mulish, normal, none, --teal, 16px, 700);
-      @include box-model(128px, 45px, 40px);
-      text-align: center;
-      flex-shrink: 0;
-      border: 1px solid #008d96;
-      &:hover {
-        color: var(--light-color);
-        background: var(--light-color-hover);
-      }
-    }
-    .signup {
-      @include flexbox(flex, center, center, 5px);
-      @include text-properties(Mulish, normal, none, --light-color, 16px, 700);
-      @include box-model(206px, 45px, 40px);
-      text-align: center;
-      background: var(--teal);
-      flex-shrink: 0;
-      &:hover {
-        background-color: var(--teal-hover);
-      }
-    }
   }
 }
 
@@ -106,7 +83,7 @@
     cursor: pointer;
   }
 }
-// responsive
+// Media
 @media only screen and (max-width: 990px) {
   .main-navbar {
     .web-logo {
@@ -120,18 +97,6 @@
       .course-link {
         font-size: 18px;
       }
-    }
-    .signup {
-      width: 150px !important;
-      height: 40px !important;
-      font-size: 12px !important;
-      gap: 4px !important;
-    }
-    .login {
-      width: 90px !important;
-      height: 40px !important;
-      font-size: 12px !important;
-      gap: 4px !important;
     }
   }
 }

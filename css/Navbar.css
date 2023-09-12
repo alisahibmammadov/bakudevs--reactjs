@@ -55,49 +55,6 @@
   justify-content: default;
   gap: 11px;
 }
-.main-navbar .navbar__btn-boxes .login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  font-family: Mulish;
-  line-height: normal;
-  text-decoration: none;
-  color: var(--teal);
-  font-size: 16px;
-  font-weight: 700;
-  width: 128px;
-  height: 45px;
-  border-radius: 40px;
-  text-align: center;
-  flex-shrink: 0;
-  border: 1px solid #008d96;
-}
-.main-navbar .navbar__btn-boxes .login:hover {
-  color: var(--light-color);
-  background: var(--light-color-hover);
-}
-.main-navbar .navbar__btn-boxes .signup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-family: Mulish;
-  line-height: normal;
-  text-decoration: none;
-  color: var(--light-color);
-  font-size: 16px;
-  font-weight: 700;
-  width: 206px;
-  height: 45px;
-  border-radius: 40px;
-  text-align: center;
-  background: var(--teal);
-  flex-shrink: 0;
-}
-.main-navbar .navbar__btn-boxes .signup:hover {
-  background-color: var(--teal-hover);
-}
 
 .menu-icon-box {
   display: none;
@@ -119,18 +76,6 @@
   }
   .main-navbar .navbar__menu-course .course-link {
     font-size: 18px;
-  }
-  .main-navbar .signup {
-    width: 150px !important;
-    height: 40px !important;
-    font-size: 12px !important;
-    gap: 4px !important;
-  }
-  .main-navbar .login {
-    width: 90px !important;
-    height: 40px !important;
-    font-size: 12px !important;
-    gap: 4px !important;
   }
 }
 @media only screen and (max-width: 767px) {

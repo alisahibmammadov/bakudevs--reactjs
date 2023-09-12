@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../assets/styles/navbar/NavbarMobileMenu.scss";
+import SignupBtn from "../Buttons/SignupBtn";
+import LoginBtn from "../Buttons/LoginBtn";
+
+
 
 function NavbarMobileMenu({ menu, setMenu }) {
   const [frontend, setFrontend] = useState(false);
@@ -64,6 +68,15 @@ function NavbarMobileMenu({ menu, setMenu }) {
             </Col>
           ) : null}
         </Row>
+      </Container>
+      <Container fluid>
+        <Row>
+          <Col>
+            <div><i class="fa-regular fa-heart"></i> İstək siyahısı <SignupBtn/> <LoginBtn/></div>
+          </Col>
+        </Row>
+        <Row></Row>
+        <Row></Row>
       </Container>
     </Container>
   );

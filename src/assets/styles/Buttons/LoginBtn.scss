@@ -1,0 +1,52 @@
+
+// Mixin Start
+@mixin flexbox($display, $align-items, $justify-content, $gap) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: $gap;
+  }
+  
+  @mixin text-properties(
+    $font-family,
+    $line-height,
+    $text-decoration,
+    $color,
+    $font-size,
+    $font-weight
+  ) {
+    font-family: $font-family;
+    line-height: $line-height;
+    text-decoration: $text-decoration;
+    color: var($color);
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
+  
+  @mixin box-model($width, $height, $border-radius) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+  }
+  // Mixin End
+.login-btn {
+    @include flexbox(flex, center, center, 6px);
+    @include text-properties(Mulish, normal, none, --teal, 16px, 700);
+    @include box-model(128px, 45px, 40px);
+    text-align: center;
+    flex-shrink: 0;
+    border: 1px solid #008d96;
+    &:hover {
+      color: var(--light-color);
+      background: var(--light-color-hover);
+    }
+  }
+
+  @media only screen and (max-width: 990px){
+    .login-btn {
+        width: 90px !important;
+        height: 40px !important;
+        font-size: 12px !important;
+        gap: 4px !important;
+      }
+  }

@@ -3,6 +3,9 @@ import WebLogo from "../../assets/img/logo/websiteLogo.png";
 import "../../assets/styles/navbar/Navbar.scss";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import SignupBtn from "../Buttons/SignupBtn";
+import LoginBtn from "../Buttons/LoginBtn";
+
 
 function Navbar({ menu, setMenu }) {
   const handleClick = () => {
@@ -33,16 +36,8 @@ function Navbar({ menu, setMenu }) {
       </div>
 
       <div className="navbar__btn-boxes">
-        <Button className="login" variant="link">
-          <Link className="login" to="/">
-            <i className="fa-solid fa-arrow-right-to-bracket"></i> Daxil ol
-          </Link>
-        </Button>
-        <Button className="signup" variant="link">
-          <Link className="signup" to="/">
-            <i className="fa-regular fa-pen-to-square"></i> Qeydiyyatdan keç
-          </Link>
-        </Button>
+        <LoginBtn/>
+        <SignupBtn/>
       </div>
       <div className="menu-icon-box" onClick={handleClick}>
         <i className="fa-solid fa-bars-staggered"></i>
