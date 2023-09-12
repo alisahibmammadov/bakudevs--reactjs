@@ -1,0 +1,156 @@
+// Mixin Start
+@mixin flexbox($display, $align-items, $justify-content, $gap) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin text-properties(
+  $font-family,
+  $line-height,
+  $text-decoration,
+  $color,
+  $font-size,
+  $font-weight
+) {
+  font-family: $font-family;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  color: var($color);
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin box-model($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+// Mixin End
+
+.main-navbar {
+  @include flexbox(flex, center, space-between, default);
+  padding: 28px 0;
+  .navbar__menu-course {
+    @include flexbox(flex, center, default, 15px);
+    i {
+      color: var(--dark-charcoal);
+    }
+    .course-link {
+      @include text-properties(
+        Mulish,
+        normal,
+        none,
+        --dark-charcoal,
+        22px,
+        600
+      );
+    }
+    &:hover .course-link,
+    &:hover i,
+    &:hover {
+      cursor: pointer;
+      color: var(--dark-charcoal-hover);
+    }
+  }
+  .navbar__wishlist {
+    @include flexbox(flex, center, default, 15px);
+    flex-shrink: 0;
+    i {
+      color: var(--teal);
+    }
+    .wishlist-link {
+      @include text-properties(Mulish, normal, none, --teal, 16px, 700);
+      text-align: center;
+    }
+    &:hover .wishlist-link,
+    &:hover i,
+    &:hover {
+      cursor: pointer;
+      color: var(--teal-hover);
+    }
+  }
+  .navbar__btn-boxes {
+    @include flexbox(flex, center, default, 11px);
+    .login {
+      @include flexbox(flex, center, center, 6px);
+      @include text-properties(Mulish, normal, none, --teal, 16px, 700);
+      @include box-model(128px, 45px, 40px);
+      text-align: center;
+      flex-shrink: 0;
+      border: 1px solid #008d96;
+      &:hover {
+        color: var(--light-color);
+        background: var(--light-color-hover);
+      }
+    }
+    .signup {
+      @include flexbox(flex, center, center, 5px);
+      @include text-properties(Mulish, normal, none, --light-color, 16px, 700);
+      @include box-model(206px, 45px, 40px);
+      text-align: center;
+      background: var(--teal);
+      flex-shrink: 0;
+      &:hover {
+        background-color: var(--teal-hover);
+      }
+    }
+  }
+}
+
+.menu-icon-box {
+  display: none;
+  &:hover {
+    color: var(--dark-charcoal-hover);
+    cursor: pointer;
+  }
+}
+// responsive
+@media only screen and (max-width: 990px) {
+  .main-navbar {
+    .web-logo {
+      width: 150px !important;
+    }
+    .navbar__wishlist {
+      gap: 10px;
+    }
+    .navbar__menu-course {
+      gap: 10px;
+      .course-link {
+        font-size: 18px;
+      }
+    }
+    .signup {
+      width: 150px !important;
+      height: 40px !important;
+      font-size: 12px !important;
+      gap: 4px !important;
+    }
+    .login {
+      width: 90px !important;
+      height: 40px !important;
+      font-size: 12px !important;
+      gap: 4px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-navbar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .menu-icon-box {
+    display: flex !important;
+  }
+  .navbar__btn-boxes {
+    display: none !important;
+  }
+  .navbar__menu-course {
+    display: none !important;
+  }
+  .navbar__wishlist {
+    display: none !important;
+  }
+}

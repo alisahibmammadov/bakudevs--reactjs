@@ -2,9 +2,17 @@
 
 :root {
   --teal: #008d96;
+  --teal-hover: #005e66;
+
   --goldenrod: #f5af15;
+
   --dark-charcoal: #1b2221;
+  --dark-charcoal-hover:#ff5733;
+
   --light-gray: #eff1f1;
+  
+  --light-color: #fff;
+  --light-color-hover: #333;
 }
 * {
   margin: 0;
