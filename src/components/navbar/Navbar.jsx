@@ -2,7 +2,6 @@ import React from "react";
 import WebLogo from "../../assets/img/logo/websiteLogo.png";
 import "../../assets/styles/navbar/Navbar.scss";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import SignupBtn from "../Buttons/SignupBtn";
 import LoginBtn from "../Buttons/LoginBtn";
 
