@@ -4,8 +4,6 @@ import "../../assets/styles/navbar/NavbarMobileMenu.scss";
 import SignupBtn from "../Buttons/SignupBtn";
 import LoginBtn from "../Buttons/LoginBtn";
 
-
-
 function NavbarMobileMenu({ menu, setMenu }) {
   const [frontend, setFrontend] = useState(false);
   const [backend, setBackend] = useState(false);
@@ -15,7 +13,7 @@ function NavbarMobileMenu({ menu, setMenu }) {
       <Row className="xmark-row">
         <Col sm={12} md={12}>
           <div className="xmark" onClick={() => setMenu(false)}>
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           </div>
         </Col>
       </Row>
@@ -69,14 +67,24 @@ function NavbarMobileMenu({ menu, setMenu }) {
           ) : null}
         </Row>
       </Container>
-      <Container fluid>
+      <Container fluid className="">
         <Row>
           <Col>
-            <div><i class="fa-regular fa-heart"></i> İstək siyahısı <SignupBtn/> <LoginBtn/></div>
+            <div>
+              <i className="fa-regular fa-heart"></i> İstək siyahısı
+            </div>
           </Col>
         </Row>
-        <Row></Row>
-        <Row></Row>
+        <Row>
+          <Col>
+            <LoginBtn />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <SignupBtn />
+          </Col>
+        </Row>
       </Container>
     </Container>
   );
