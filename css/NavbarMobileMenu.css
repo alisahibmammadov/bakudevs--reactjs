@@ -21,7 +21,7 @@ body {
 .xmark-row {
   min-width: 100%;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 10%;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .mobile-menu-position {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .frontend-row,
@@ -66,7 +66,21 @@ body {
   width: 100% !important;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  border-top: 1px solid #DDE5E7;
-  padding: 20px 0;
+  justify-content: flex-end;
+  gap: 20px;
+  border-top: 1px solid #dde5e7;
+  padding: 20px 0 0;
+}
+.mobile-menu-bottom .mobile-wishlist {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.mobile-menu-bottom .mobile-wishlist h2 {
+  color: #1b2221;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }/*# sourceMappingURL=NavbarMobileMenu.css.map */

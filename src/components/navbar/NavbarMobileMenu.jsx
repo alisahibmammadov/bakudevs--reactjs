@@ -5,7 +5,7 @@ import SignupBtn from "../Buttons/SignupBtn";
 import LoginBtn from "../Buttons/LoginBtn";
 
 function NavbarMobileMenu({ menu, setMenu }) {
-  const [frontend, setFrontend] = useState(false);
+  const [frontend, setFrontend] = useState(true);
   const [backend, setBackend] = useState(false);
   const [uiux, setUiux] = useState(false);
   return (
@@ -95,22 +95,18 @@ function NavbarMobileMenu({ menu, setMenu }) {
         <Row>
           <Col>
             <div className="mobile-wishlist">
-              <i className="fa-regular fa-heart"></i> İstək siyahısı
+              <h2><i className="fa-regular fa-heart"></i> İstək siyahısı</h2>
             </div>
           </Col>
         </Row>
         <Row>
           <Col>
-            <div className="mobile-login">
               <LoginBtn />
-            </div>
           </Col>
         </Row>
         <Row>
           <Col>
-            <div className="mobile-signup">
               <SignupBtn />
-            </div>
           </Col>
         </Row>
       </Container>
