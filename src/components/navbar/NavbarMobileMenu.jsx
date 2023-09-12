@@ -54,7 +54,7 @@ function NavbarMobileMenu({ menu, setMenu }) {
                 setFrontend(false);
                 setUiux(false);
               }}
-            >
+            > 
               Backend
             </h2>
           </Col>

@@ -1,6 +1,13 @@
 // Mixin Start
-@mixin flexbox($display, $align-items, $justify-content, $gap) {
+@mixin flexbox(
+  $display,
+  $flex-direction,
+  $align-items,
+  $justify-content,
+  $gap
+) {
   display: $display;
+  flex-direction: $flex-direction;
   align-items: $align-items;
   justify-content: $justify-content;
   gap: $gap;
@@ -30,7 +37,7 @@
 // Mixin End
 
 .signup-btn {
-  @include flexbox(flex, center, center, 5px);
+  @include flexbox(flex, row, center, center, 5px);
   @include text-properties(Mulish, normal, none, --light-color, 16px, 700);
   @include box-model(206px, 45px, 40px);
   text-align: center;

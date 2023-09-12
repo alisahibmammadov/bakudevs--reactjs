@@ -4,10 +4,10 @@ body {
 
 .navbar-mobile-menu {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: default;
-  flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   background: var(--bg-color);
@@ -27,6 +27,7 @@ body {
 
 .xmark {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: default;
@@ -44,6 +45,7 @@ body {
 .backend-row,
 .uiux-row {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: default;
   gap: default;
@@ -59,6 +61,17 @@ body {
   font-weight: 500;
   list-style-type: none;
 }
+.frontend-row h2,
+.backend-row h2,
+.uiux-row h2 {
+  font-family: Mulish;
+  line-height: normal;
+  text-decoration: default;
+  color: var(--dark-charcoal);
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 450px) {
   .navbar-mobile-menu {
@@ -67,21 +80,23 @@ body {
 }
 .mobile-menu-bottom {
   display: flex;
+  flex-direction: column;
   align-items: default;
   justify-content: flex-end;
   gap: 20px;
   width: 100% !important;
-  flex-direction: column;
   border-top: 1px solid var(--border-color);
   padding: 20px 0 0;
 }
 .mobile-menu-bottom .mobile-wishlist {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: default;
   gap: 14px;
 }
 .mobile-menu-bottom .mobile-wishlist h2 {
+  cursor: pointer;
   font-family: Mulish;
   line-height: normal;
   text-decoration: default;

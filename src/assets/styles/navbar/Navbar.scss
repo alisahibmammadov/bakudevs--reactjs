@@ -1,6 +1,13 @@
 // Mixin Start
-@mixin flexbox($display, $align-items, $justify-content, $gap) {
+@mixin flexbox(
+  $display,
+  $flex-direction,
+  $align-items,
+  $justify-content,
+  $gap
+) {
   display: $display;
+  flex-direction: $flex-direction;
   align-items: $align-items;
   justify-content: $justify-content;
   gap: $gap;
@@ -34,10 +41,10 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  @include flexbox(flex, center, space-between, default);
+  @include flexbox(flex, row, center, space-between, default);
   padding: 28px 0;
   .navbar__menu-course {
-    @include flexbox(flex, center, default, 15px);
+    @include flexbox(flex, row, center, default, 15px);
     i {
       color: var(--dark-charcoal);
     }
@@ -59,7 +66,7 @@
     }
   }
   .navbar__wishlist {
-    @include flexbox(flex, center, default, 15px);
+    @include flexbox(flex, row, center, default, 15px);
     flex-shrink: 0;
     i {
       color: var(--teal);
@@ -76,7 +83,7 @@
     }
   }
   .navbar__btn-boxes {
-    @include flexbox(flex, center, default, 11px);
+    @include flexbox(flex, row, center, default, 11px);
   }
 }
 

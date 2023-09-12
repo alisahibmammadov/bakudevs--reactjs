@@ -6,7 +6,6 @@ import Button from "react-bootstrap/Button";
 import SignupBtn from "../Buttons/SignupBtn";
 import LoginBtn from "../Buttons/LoginBtn";
 
-
 function Navbar({ menu, setMenu }) {
   const handleClick = () => {
     setMenu(!menu);
@@ -36,8 +35,8 @@ function Navbar({ menu, setMenu }) {
       </div>
 
       <div className="navbar__btn-boxes">
-        <LoginBtn/>
-        <SignupBtn/>
+        <LoginBtn />
+        <SignupBtn />
       </div>
       <div className="menu-icon-box" onClick={handleClick}>
         <i className="fa-solid fa-bars-staggered"></i>

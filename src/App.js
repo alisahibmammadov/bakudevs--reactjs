@@ -5,9 +5,9 @@ import Navbar from "./components/navbar/Navbar";
 import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
 
 function App() {
-  const [menu,setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (window.innerWidth > 768) {
       setMenu(false);
     }
@@ -16,10 +16,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar menu={menu} setMenu={setMenu}/>
-        {
-          menu === true ? <NavbarMobileMenu menu={menu} setMenu={setMenu}/> : null
-        }
+        <Navbar menu={menu} setMenu={setMenu} />
+        {menu === true ? (
+          <NavbarMobileMenu menu={menu} setMenu={setMenu} />
+        ) : null}
         <Routes>
           <Route />
         </Routes>

@@ -7,18 +7,18 @@
   --goldenrod: #f5af15;
 
   --dark-charcoal: #1b2221;
-  --dark-charcoal-hover:#ff5733;
+  --dark-charcoal-hover: #ff5733;
 
   --light-gray: #eff1f1;
-  
+
   --light-color: #fff;
   --light-color-hover: #333;
 
-  --bg-color:#fbfcfc;
+  --bg-color: #fbfcfc;
 
-  --border-color:#dde5e7;
+  --border-color: #dde5e7;
 
-  --list-color:#939393;
+  --list-color: #939393;
 }
 * {
   margin: 0;
