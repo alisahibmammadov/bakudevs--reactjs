@@ -18,10 +18,10 @@ function NavbarMobileMenu({ menu, setMenu }) {
         </Col>
       </Row>
 
-      <Container fluid>
+      <Container fluid className="mobile-menu-position">
         <Row className="frontend-row">
           <Col sm={6}>
-            <h2 onClick={() => setFrontend(!frontend)}>Frontend</h2>
+            <h2 onClick={() => {setFrontend(!frontend); setBackend(false); setUiux(false);}}>Frontend</h2>
           </Col>
           {frontend === true ? (
             <Col sm={6}>
@@ -39,7 +39,7 @@ function NavbarMobileMenu({ menu, setMenu }) {
 
         <Row className="backend-row">
           <Col md={6} sm={6}>
-            <h2 onClick={() => setBackend(!backend)}>Backend</h2>
+            <h2 onClick={() => {setBackend(!backend); setFrontend(false); setUiux(false);}}>Backend</h2>
           </Col>
           {backend === true ? (
             <Col md={6} sm={6}>
@@ -54,7 +54,7 @@ function NavbarMobileMenu({ menu, setMenu }) {
         </Row>
         <Row className="uiux-row">
           <Col md={6} sm={6}>
-            <h2 onClick={() => setUiux(!uiux)}>UI/UX</h2>
+            <h2 onClick={() => {setUiux(!uiux); setBackend(false);setFrontend(false);}}>UI/UX</h2>
           </Col>
           {uiux === true ? (
             <Col md={6} sm={6}>
@@ -67,7 +67,7 @@ function NavbarMobileMenu({ menu, setMenu }) {
           ) : null}
         </Row>
       </Container>
-      <Container fluid className="">
+      <Container fluid className="mobile-menu-bottom">
         <Row>
           <Col>
             <div>
