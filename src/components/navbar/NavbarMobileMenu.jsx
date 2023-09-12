@@ -3,10 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../../assets/styles/navbar/NavbarMobileMenu.scss";
 
 function NavbarMobileMenu({ menu, setMenu }) {
-    const [position,setPosition] = useState(false)
+  const [frontend, setFrontend] = useState(false);
+  const [backend, setBackend] = useState(false);
+  const [uiux, setUiux] = useState(false);
   return (
     <Container className="navbar-mobile-menu">
-
       <Row className="xmark-row">
         <Col sm={12} md={12}>
           <div className="xmark" onClick={() => setMenu(false)}>
@@ -15,39 +16,55 @@ function NavbarMobileMenu({ menu, setMenu }) {
         </Col>
       </Row>
 
-      <Row className="frontend-row">
-        <Col sm={6}>
-          <h2 onClick={()=>setPosition(!position)}>Frontend</h2>
-        </Col>
-        {
-            position === true ? ( <Col sm={6}>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
-              <li>jQuery</li>
-              <li>React.JS</li>
-            </ul>
-          </Col>) : null
-        }
-      </Row>
-      <Row className="backend-row">
-        <Col md={6} sm={6}>
-          s
-        </Col>
-        <Col md={6} sm={6}>
-          s
-        </Col>
-      </Row>
-      <Row className="uiux-row">
-        <Col md={6} sm={6}>
-          s
-        </Col>
-        <Col md={6} sm={6}>
-          s
-        </Col>
-      </Row>
+      <Container fluid>
+        <Row className="frontend-row">
+          <Col sm={6}>
+            <h2 onClick={() => setFrontend(!frontend)}>Frontend</h2>
+          </Col>
+          {frontend === true ? (
+            <Col sm={6}>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>React.JS</li>
+              </ul>
+            </Col>
+          ) : null}
+        </Row>
+
+        <Row className="backend-row">
+          <Col md={6} sm={6}>
+            <h2 onClick={() => setBackend(!backend)}>Backend</h2>
+          </Col>
+          {backend === true ? (
+            <Col md={6} sm={6}>
+              <ul>
+                <li>Php</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C#</li>
+              </ul>
+            </Col>
+          ) : null}
+        </Row>
+        <Row className="uiux-row">
+          <Col md={6} sm={6}>
+            <h2 onClick={() => setUiux(!uiux)}>UI/UX</h2>
+          </Col>
+          {uiux === true ? (
+            <Col md={6} sm={6}>
+              <ul>
+                <li>Figma</li>
+                <li>Xd</li>
+                <li>Photshop</li>
+              </ul>
+            </Col>
+          ) : null}
+        </Row>
+      </Container>
     </Container>
   );
 }
