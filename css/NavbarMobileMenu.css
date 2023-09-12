@@ -1,0 +1,16 @@
+body {
+  position: relative;
+}
+
+.nav {
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.xmark {
+  background: red;
+  width: 100%;
+}/*# sourceMappingURL=NavbarMobileMenu.css.map */
