@@ -30,6 +30,10 @@
 // Mixin End
 
 .main-navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   @include flexbox(flex, center, space-between, default);
   padding: 28px 0;
   .navbar__menu-course {

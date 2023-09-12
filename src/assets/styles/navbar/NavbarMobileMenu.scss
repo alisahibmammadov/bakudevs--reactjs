@@ -35,7 +35,8 @@ body {
 .navbar-mobile-menu {
   @include flexbox(flex, flex-start, space-between, default);
   flex-direction: column;
-  @include box-model(100vw, 100vh, default);
+  min-width: 100vw;
+  min-height: 100vh;
   background: var(--bg-color);
   position: absolute;
   top: 0;
