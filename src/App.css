@@ -13,6 +13,8 @@
   
   --light-color: #fff;
   --light-color-hover: #333;
+
+  --bg-color:#fbfcfc;
 }
 * {
   margin: 0;

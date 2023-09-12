@@ -2,23 +2,32 @@ body {
   position: relative;
 }
 
-.nav {
-  background: red;
+.navbar-mobile-menu {
+  background: var(--bg-color);
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
+  padding: 33px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: red;
 }
 
-.xmark {
-  background: red;
+.xmark-row {
   width: 100%;
 }
 
-@media only screen and (min-width: 767px) {
-  .nav {
-    display: none;
-  }
+.xmark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+}
+.xmark i {
+  font-size: 2.5rem;
 }/*# sourceMappingURL=NavbarMobileMenu.css.map */
