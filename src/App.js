@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -21,7 +22,7 @@ function App() {
           <NavbarMobileMenu menu={menu} setMenu={setMenu} />
         ) : null}
         <Routes>
-          <Route />
+          <Route path="/" element={<HomePage/>} />
         </Routes>
       </BrowserRouter>
     </div>

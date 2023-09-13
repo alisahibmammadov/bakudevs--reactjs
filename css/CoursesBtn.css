@@ -1,0 +1,19 @@
+.courses-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Mulish;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 700;
+  width: 180px;
+  height: 55px;
+  border-radius: 70px;
+  flex-shrink: 0;
+  background: #008d96;
+  box-shadow: 0px 20px 40px 0px rgba(1, 94, 100, 0.2);
+}/*# sourceMappingURL=CoursesBtn.css.map */

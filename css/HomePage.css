@@ -1,0 +1,72 @@
+.main-home-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../img/HomePage/HomeBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-home-page .home-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 47px;
+}
+.main-home-page .home-page-entry h2 {
+  color: #1b2221;
+  font-family: Lora;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 68px;
+}
+.main-home-page .home-page-entry h2 .goldenrod {
+  color: var(--golderrod);
+  color: #f5af15;
+  font-family: Lora;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 450px) {
+  .main-home-page-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 50px !important;
+  }
+  .left-side-btn-row {
+    display: none;
+  }
+  .home-page-entry h2 {
+    font-size: 26px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+  }
+  .home-page-entry h2 span {
+    font-size: 26px !important;
+  }
+  .home-girl {
+    width: 289px;
+    height: 242px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (max-width: 876px) {
+  .main-home-page-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 50px !important;
+  }
+  .home-left-side {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home-page-entry h2 {
+    text-align: center !important;
+  }
+}/*# sourceMappingURL=HomePage.css.map */
