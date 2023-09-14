@@ -1,13 +1,13 @@
 import React from "react";
 import "../../assets/styles/Cards/Card.scss";
 
-function Card({ atHome, cardData, type }) {
+function Card({ atHome, cardData, cardsType }) {
   return (
     <>
       {cardData
         .filter(
           (item) =>
-            type === "all" || item.position.toLowerCase() === type.toLowerCase()
+          cardsType === "all" || item.position.toLowerCase() === cardsType.toLowerCase()
         )
         .slice(0, atHome ? 8 : undefined)
         .map((item) => (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "../../assets/styles/Buttons/CoursesPositionBtn.scss";
 
-function SeeAllBtn({setType , type}) {
+function SeeAllBtn({setType , cardsType,setCardsType}) {
 
   const [selectedPositionBtn, setSelectedPositionBtn] = useState(null);
   const handleClick = (position) => {
@@ -11,11 +11,11 @@ function SeeAllBtn({setType , type}) {
   return (
         <Button
           className={`courses-position-btn ${
-            selectedPositionBtn === 'active' && type === 'all' ? "position-btn-active"  : ''
+            selectedPositionBtn === 'active' && cardsType === 'all' ? "position-btn-active"  : ''
           }`}
           variant="link"
           onClick={() => {
-            setType('all')
+            setCardsType('all')
             handleClick("active");
           }}
         >

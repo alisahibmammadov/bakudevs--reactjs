@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { CardData } from "../../data/Card.js";
 import "../../assets/styles/Buttons/CoursesPositionBtn.scss";
 
-function CoursesPositionBtn({ setType,type }) {
+function CoursesPositionBtn({ setType,cardsType,setCardsType }) {
   const [cardData] = useState(CardData);
   const uniquePositions = [...new Set(cardData.map((item) => item.position))];
 
@@ -16,12 +16,12 @@ function CoursesPositionBtn({ setType,type }) {
       {uniquePositions.map((position) => (
         <Button
           className={`courses-position-btn ${
-            selectedPositionBtn === position && type !== 'all' ? "position-btn-active" : ""
+            selectedPositionBtn === position && cardsType !== 'all' ? "position-btn-active" : ""
           }`}
           key={position}
           variant="link"
           onClick={() => {
-            setType(position);
+            setCardsType(position);
             handleClick(position);
           }}
         >
