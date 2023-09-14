@@ -26,7 +26,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
-      <Card atHome />
+      <Card atHoe />
     </div>
   );
 }
