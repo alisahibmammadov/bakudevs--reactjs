@@ -1,4 +1,4 @@
-.home-page-head {
+.home-head {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,14 +11,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.home-page-head .home-page-head-left-side {
+.home-head .home-head-left-side {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 47px;
 }
-.home-page-head .home-page-head-entry h2 {
+.home-head .home-head-entry h2 {
   font-family: Lora;
   line-height: 68px;
   text-decoration: default;
@@ -26,7 +26,7 @@
   font-size: 56px;
   font-weight: 600;
 }
-.home-page-head .home-page-head-entry h2 .goldenrod {
+.home-head .home-head-entry h2 .goldenrod {
   font-family: Lora;
   line-height: default;
   text-decoration: default;
@@ -36,25 +36,25 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .home-page-head-row {
+  .home-head-row {
     display: flex !important;
     flex-direction: column !important;
     align-items: default;
     justify-content: default;
     gap: 50px !important;
   }
-  .home-page-head-left-side-btn-row {
+  .home-head-left-side-btn-row {
     display: none;
   }
-  .home-page-head-entry h2 {
+  .home-head-entry h2 {
     font-size: 26px !important;
     line-height: 32px !important;
     text-align: center !important;
   }
-  .home-page-head-entry h2 span {
+  .home-head-entry h2 span {
     font-size: 26px !important;
   }
-  .home-page-head-girl {
+  .home-head-girl {
     width: 279px;
     height: 242px;
     border-radius: default;
@@ -62,26 +62,26 @@
   }
 }
 @media only screen and (max-width: 876px) {
-  .home-page-head-row {
+  .home-head-row {
     display: flex !important;
     flex-direction: column !important;
     align-items: default;
     justify-content: default;
     gap: 50px !important;
   }
-  .home-page-head-left-side {
+  .home-head-left-side {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: default;
     gap: default;
   }
-  .home-page-head-entry h2 {
+  .home-head-entry h2 {
     text-align: center !important;
   }
 }
 @media only screen and (max-width: 950px) {
-  .home-page-head-left-side {
+  .home-head-left-side {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -91,7 +91,7 @@
   }
 }
 @media only screen and (max-width: 280px) {
-  .home-page-head-girl {
+  .home-head-girl {
     width: 230px;
     height: 222px;
     border-radius: default;

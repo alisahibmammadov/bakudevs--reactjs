@@ -6,12 +6,12 @@ import CoursesBtn from "../../components/Buttons/CoursesBtn";
 
 function HomePageHead() {
   return (
-    <Container fluid className="home-page-head">
-      <Row className="container home-page-head-row">
-        <Col lg={6} md={12} className="home-page-head-left-side">
-          <Row className="home-page-head-left-side-entry-row">
+    <Container fluid className="home-head">
+      <Row className="container home-head-row">
+        <Col lg={6} md={12} className="home-head-left-side">
+          <Row className="home-head-left-side-entry-row">
             <Col>
-              <section className="home-page-head-entry">
+              <section className="home-head-entry">
                 <h2>
                   <span className="goldenrod">Proqramlaşdırmanı </span>
                   onlayn olaraq bizdən öyrənin
@@ -20,7 +20,7 @@ function HomePageHead() {
             </Col>
           </Row>
 
-          <Row className="home-page-head-left-side-btn-row">
+          <Row className="home-head-left-side-btn-row">
             <Col>
               <CoursesBtn />
             </Col>
@@ -29,7 +29,7 @@ function HomePageHead() {
 
         <Col lg={6} md={12}>
           <figure>
-            <img src={HomeGirl} alt="Home Girl" className="home-page-head-girl" />
+            <img src={HomeGirl} alt="Home Girl" className="home-head-girl" />
           </figure>
         </Col>
       </Row>

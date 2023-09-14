@@ -1,16 +1,16 @@
 // Mixin Start
 @import "../../../helpers/css/style.scss";
 // Mixin End
-.home-page-head {
+.home-head {
   @include flexbox(flex, row, center, center, default);
   @include box-model(100vw, 100vh, default);
   background-image: url("../../img/HomePage/HomeBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
-  .home-page-head-left-side {
+  .home-head-left-side {
     @include flexbox(flex, column, flex-start, center, 47px);
   }
-  .home-page-head-entry {
+  .home-head-entry {
     h2 {
       @include text-properties(Lora, 68px, default, --dark-charcoal, 56px, 600);
       .goldenrod {
@@ -28,7 +28,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .home-page-head-row {
+  .home-head-row {
     @include flexbox(
       flex !important,
       column !important,
@@ -38,10 +38,10 @@
     );
   }
 
-  .home-page-head-left-side-btn-row {
+  .home-head-left-side-btn-row {
     display: none;
   }
-  .home-page-head-entry {
+  .home-head-entry {
     h2 {
       font-size: 26px !important;
       line-height: 32px !important;
@@ -51,13 +51,13 @@
       }
     }
   }
-  .home-page-head-girl {
+  .home-head-girl {
     @include box-model(279px, 242px, default);
     flex-shrink: 0;
   }
 }
 @media only screen and (max-width: 876px) {
-  .home-page-head-row {
+  .home-head-row {
     @include flexbox(
       flex !important,
       column !important,
@@ -67,7 +67,7 @@
     );
   }
 
-  .home-page-head-left-side {
+  .home-head-left-side {
     @include flexbox(
       flex !important,
       column !important,
@@ -76,7 +76,7 @@
       default
     );
   }
-  .home-page-head-entry {
+  .home-head-entry {
     h2 {
       text-align: center !important;
     }
@@ -84,7 +84,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .home-page-head-left-side {
+  .home-head-left-side {
     @include flexbox(
       flex !important,
       column !important,
@@ -97,7 +97,7 @@
 }
 
 @media only screen and (max-width: 280px) {
-  .home-page-head-girl {
+  .home-head-girl {
     @include box-model(230px, 222px, default);
     flex-shrink: 0;
     margin: 0;
