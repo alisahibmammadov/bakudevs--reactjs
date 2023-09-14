@@ -4,15 +4,15 @@ import { CardData } from "../../data/Card.js";
 
 function CoursesPositionBtn() {
   const [cardData, setCardData] = useState(CardData);
+  const uniquePositions = [...new Set(cardData.map((item) => item.position))];
+  console.log(uniquePositions);
   return (
     <>
-      {cardData
-        .filter(
-          (item) => item.position === "Backend" || item.position === "Frontend"
-        )
-        .map((item) => (
-          <Button variant="link">{item.position}</Button>
-        ))}
+      {uniquePositions.map((position) => (
+        <Button key={position} variant="link" onClick={()=>console.log(position)}>
+          {position}
+        </Button>
+      ))}
     </>
   );
 }

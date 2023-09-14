@@ -34,18 +34,18 @@ function Card({ atHome }) {
           )
           .slice(0, atHome ? 8 : undefined)
           .map((item) => (
-            <div className="main-card">
+            <div className="main-card" key={item.id}>
               <img src={item.cardImg} alt="" />
               <div className="card-pos-lessonNum">
                 <h3>{item.position}</h3>
                 <span className="lesson-num">
-                  <i class="fa-regular fa-circle-play"></i>
+                  <i className="fa-regular fa-circle-play"></i>
                   {item.lessonNum}
                 </span>
               </div>
               <div className="card-info">
                 <span>{item.info}</span>
-                <i class="fa-solid fa-circle-play"></i>
+                <i className="fa-solid fa-circle-play"></i>
               </div>
             </div>
           ))}
