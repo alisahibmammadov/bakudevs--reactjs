@@ -1,1 +1,5 @@
-/*# sourceMappingURL=HomeCoursesPage.css.map */
+.home-courses-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}/*# sourceMappingURL=HomeCoursesPage.css.map */

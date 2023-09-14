@@ -4,39 +4,34 @@ import CoursesPositionBtn from "../Buttons/CoursesPositionBtn";
 import SeeAllBtn from "../Buttons/SeeAllBtn";
 import Card from "../../components/Cards/Card";
 import { CardData } from "../../data/Card";
+import '../../assets/styles/HomePage/HomeCoursesPage.scss'
 function HomeCoursesPage() {
   const [selectedBtn, setSelectedBtn] = useState();
 
   const [type, setType] = useState("all");
+  console.log(type);
 
   const [cardData, setCardData] = useState([]);
   useEffect(() => {
     setCardData(CardData);
-  }, [cardData]);
+  }, [cardData,type]);
 
-
-  const handleFilter = (selectedType) => {
-    setType(selectedType);
-  };
   return (
     <Container>
-        <div>
-        <button onClick={() => handleFilter("Backend")}>backend</button>
-        <button onClick={() => handleFilter("FrontEnd")}>frontend</button>
-        <button onClick={() => handleFilter("UI/UX")}>ui/ux</button>
-      </div>
       <Row>
         <Col style={{ background: "red" }}>
           <h3>Populyar Kurslar</h3>
         </Col>
         <Col>
-        <SeeAllBtn setType={setType}/>
-          <CoursesPositionBtn setType={setType}/>
+          <SeeAllBtn setType={setType} type={type}/>
+          <CoursesPositionBtn setType={setType} type={type}/>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <Card atHome cardData={cardData} type={type}/>
+        <Col md={12}>
+          <div className="home-courses-cards-list">
+            <Card atHome cardData={cardData} type={type} />
+          </div>
         </Col>
       </Row>
       <Row></Row>

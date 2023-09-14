@@ -1,2 +1,8 @@
 @import '../../../helpers/css/style.scss';
 
+.home-courses-cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // width: 100%;
+}
