@@ -30,6 +30,7 @@ function HomeCoursesPage() {
           <h3>Populyar Kurslar</h3>
         </Col>
         <Col>
+        <SeeAllBtn setType={setType}/>
           <CoursesPositionBtn setType={setType}/>
         </Col>
       </Row>
