@@ -4,11 +4,13 @@ import React from "react";
 // import HomeGirl from "../assets/img/HomePage/HomeGirl.png";
 // import CoursesBtn from "../components/Buttons/CoursesBtn";
 import HomePageHead from "../components/HomePage/HomePageHead";
+import HomeCoursesPage from "../components/HomePage/HomeCoursesPage";
 
 function HomePage() {
   return (
     <>
       <HomePageHead />
+      <HomeCoursesPage/>
     </>
     // <Container fluid className="main-home-page">
     //   <Row className="container main-home-page-row">
