@@ -1,0 +1,82 @@
+.main-card {
+  width: 270px;
+  height: 347px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: default;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.09);
+  padding: 17px;
+  margin: 10px 0;
+}
+.main-card .card-pos-lessonNum {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: default;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  padding: 14.6px 0;
+}
+.main-card .card-pos-lessonNum .lesson-num {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: default;
+  gap: 4px;
+  font-family: Mulish;
+  line-height: normal;
+  text-decoration: default;
+  color: var(--list-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.main-card .card-pos-lessonNum > h3 {
+  width: 90px;
+  height: 31px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: default;
+  font-family: Mulish;
+  line-height: normal;
+  text-decoration: default;
+  color: var(--dark-charcoal);
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+  background: #fdefd0;
+  text-align: center;
+}
+.main-card .card-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: default;
+  gap: default;
+  padding: 15px 0;
+}
+.main-card .card-info span {
+  font-family: Mulish;
+  line-height: normal;
+  text-decoration: default;
+  color: var(--dark-charcoal);
+  font-size: 18px;
+  font-weight: 700;
+  width: 169px;
+  height: 60px;
+  border-radius: default;
+  flex-shrink: 0;
+}
+.main-card .card-info > i {
+  font-size: 3.125rem;
+  color: #008d96;
+}/*# sourceMappingURL=Card.css.map */

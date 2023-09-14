@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
 import HomePage from "./pages/HomePage";
+import Card from "./components/Cards/Card";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -22,9 +23,10 @@ function App() {
           <NavbarMobileMenu menu={menu} setMenu={setMenu} />
         ) : null}
         <Routes>
-          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
+      <Card atHome />
     </div>
   );
 }
