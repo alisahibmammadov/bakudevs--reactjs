@@ -6,7 +6,7 @@ import "../../assets/styles/Buttons/CoursesPositionBtn.scss";
 function CoursesPositionBtn({ setType }) {
   const [cardData] = useState(CardData);
   const uniquePositions = [...new Set(cardData.map((item) => item.position))];
-
+  
   const [selectedPositionBtn, setSelectedPositionBtn] = useState(null);
   const handleClick = (position) => {
     setSelectedPositionBtn(position);
