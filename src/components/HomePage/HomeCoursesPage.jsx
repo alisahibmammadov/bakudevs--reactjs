@@ -6,8 +6,8 @@ function HomeCoursesPage() {
   return (
     <Container>
         <Row>
-            <Col><h3>Populyar Kurslar</h3></Col>
-            <Col><CoursesPositionBtn/></Col>
+            <Col style={{background:'red'}}><h3>Populyar Kurslar</h3></Col>
+            <Col ><CoursesPositionBtn/></Col>
         </Row>
         <Row></Row>
         <Row></Row>

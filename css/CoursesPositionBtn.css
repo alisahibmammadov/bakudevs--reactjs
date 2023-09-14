@@ -1,0 +1,23 @@
+.courses-position-btn {
+  width: 136px;
+  height: 45px;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid var(--teal);
+  color: #008d96;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.courses-position-btn:hover {
+  background: var(--teal-hover);
+  color: var(--light-color);
+}
+.courses-position-btn.position-btn-active {
+  background: var(--teal-hover);
+  color: var(--light-color);
+}/*# sourceMappingURL=CoursesPositionBtn.css.map */
