@@ -5,13 +5,10 @@ import HomeGirl from "../assets/img/HomePage/HomeGirl.png";
 import CoursesBtn from "../components/Buttons/CoursesBtn";
 
 function HomePage() {
- 
   return (
     <Container fluid className="main-home-page">
-        
       <Row className="container main-home-page-row">
         <Col lg={6} md={12} className="home-left-side">
-
           <Row className="left-side-entry-row">
             <Col>
               <section className="home-page-entry">
@@ -23,11 +20,11 @@ function HomePage() {
             </Col>
           </Row>
 
-            <Row className="left-side-btn-row">
-              <Col>
-                <CoursesBtn />
-              </Col>
-            </Row>
+          <Row className="left-side-btn-row">
+            <Col>
+              <CoursesBtn />
+            </Col>
+          </Row>
         </Col>
 
         <Col lg={6} md={12}>

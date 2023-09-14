@@ -1,12 +1,15 @@
 .main-home-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: default;
   width: 100vw;
   height: 100vh;
+  border-radius: default;
   background-image: url("../../img/HomePage/HomeBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .main-home-page .home-left-side {
   display: flex;
@@ -16,19 +19,19 @@
   gap: 47px;
 }
 .main-home-page .home-page-entry h2 {
-  color: #1b2221;
   font-family: Lora;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 600;
   line-height: 68px;
+  text-decoration: default;
+  color: var(--dark-charcoal);
+  font-size: 56px;
+  font-weight: 600;
 }
 .main-home-page .home-page-entry h2 .goldenrod {
-  color: var(--golderrod);
-  color: #f5af15;
   font-family: Lora;
+  line-height: default;
+  text-decoration: default;
+  color: var(--goldenrod);
   font-size: 56px;
-  font-style: normal;
   font-weight: 600;
 }
 
@@ -36,6 +39,8 @@
   .main-home-page-row {
     display: flex !important;
     flex-direction: column !important;
+    align-items: default;
+    justify-content: default;
     gap: 50px !important;
   }
   .left-side-btn-row {
@@ -50,8 +55,9 @@
     font-size: 26px !important;
   }
   .home-girl {
-    width: 289px;
+    width: 279px;
     height: 242px;
+    border-radius: default;
     flex-shrink: 0;
   }
 }
@@ -59,14 +65,37 @@
   .main-home-page-row {
     display: flex !important;
     flex-direction: column !important;
+    align-items: default;
+    justify-content: default;
     gap: 50px !important;
   }
   .home-left-side {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: default;
+    gap: default;
   }
   .home-page-entry h2 {
     text-align: center !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .home-left-side {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: default;
+    gap: default;
+    margin-top: 20px !important;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .home-girl {
+    width: 230px;
+    height: 222px;
+    border-radius: default;
+    flex-shrink: 0;
+    margin: 0;
   }
 }/*# sourceMappingURL=HomePage.css.map */

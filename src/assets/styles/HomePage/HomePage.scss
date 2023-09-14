@@ -36,37 +36,26 @@
 }
 // Mixin End
 .main-home-page {
-  width: 100vw;
-  height: 100vh;
+  @include flexbox(flex, row, center, center, default);
+  @include box-model(100vw, 100vh, default);
   background-image: url("../../img/HomePage/HomeBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   .home-left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 47px;
+    @include flexbox(flex, column, flex-start, center, 47px);
   }
   .home-page-entry {
     h2 {
-      color: #1b2221;
-      font-family: Lora;
-      font-size: 56px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 68px;
+      @include text-properties(Lora, 68px, default, --dark-charcoal, 56px, 600);
       .goldenrod {
-        color: var(--golderrod);
-        color: #f5af15;
-        font-family: Lora;
-        font-size: 56px;
-        font-style: normal;
-        font-weight: 600;
-        // line-height: 68px; /* 121.429% */
+        @include text-properties(
+          Lora,
+          default,
+          default,
+          --goldenrod,
+          56px,
+          600
+        );
       }
     }
   }
@@ -74,9 +63,13 @@
 
 @media only screen and (max-width: 450px) {
   .main-home-page-row {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 50px !important;
+    @include flexbox(
+      flex !important,
+      column !important,
+      default,
+      default,
+      50px !important
+    );
   }
 
   .left-side-btn-row {
@@ -93,39 +86,54 @@
     }
   }
   .home-girl {
-    width: 289px;
-    height: 242px;
+    @include box-model(279px, 242px, default);
     flex-shrink: 0;
   }
 }
 @media only screen and (max-width: 876px) {
   .main-home-page-row {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 50px !important;
+    @include flexbox(
+      flex !important,
+      column !important,
+      default,
+      default,
+      50px !important
+    );
   }
 
-  //   .left-side-btn-row {
-  //     display: none;
-  //   }
   .home-left-side {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    @include flexbox(
+      flex !important,
+      column !important,
+      center !important,
+      default,
+      default
+    );
   }
   .home-page-entry {
     h2 {
-      //   font-size: 26px !important;
-      //   line-height: 32px !important;
       text-align: center !important;
-      span {
-        // font-size: 26px !important;
-      }
     }
   }
-  //   .home-girl {
-  //     width: 289px;
-  //     height: 242px;
-  //     flex-shrink: 0;
-  //   }
+}
+
+@media only screen and (max-width: 950px) {
+  .home-left-side {
+    @include flexbox(
+      flex !important,
+      column !important,
+      center !important,
+      default,
+      default
+    );
+    margin-top: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 280px){
+  .home-girl {
+    @include box-model(230px, 222px, default);
+    flex-shrink: 0;
+    margin: 0;
+  }
 }
