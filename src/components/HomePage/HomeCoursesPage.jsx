@@ -6,9 +6,6 @@ import Card from "../../components/Cards/Card";
 import { CardData } from "../../data/Card";
 import "../../assets/styles/HomePage/HomeCoursesPage.scss";
 
-
-
-
 function HomeCoursesPage() {
   const [cardsType, setCardsType] = useState("all");
 
@@ -20,12 +17,19 @@ function HomeCoursesPage() {
   return (
     <Container>
       <Row>
-        <Col style={{ background: "red" }}>
-          <h3>Populyar Kurslar</h3>
+        <Col md={4}>
+          <div className="home-courses-head">
+            <h6>Populyar Kurslar</h6>
+          </div>
         </Col>
-        <Col>
-          <SeeAllBtn setCardsType={setCardsType} cardsType={cardsType} />
-          <CoursesPositionBtn setCardsType={setCardsType} cardsType={cardsType}/>
+        <Col md={8}>
+          <div className="home-courses-head-btns">
+            <SeeAllBtn setCardsType={setCardsType} cardsType={cardsType} />
+            <CoursesPositionBtn
+              setCardsType={setCardsType}
+              cardsType={cardsType}
+            />
+          </div>
         </Col>
       </Row>
       <Row>
@@ -35,7 +39,7 @@ function HomeCoursesPage() {
           </div>
         </Col>
       </Row>
-      <Row></Row>
+      {/* <Row></Row> */}
     </Container>
   );
 }

@@ -1,8 +1,12 @@
-@import '../../../helpers/css/style.scss';
+@import "../../../helpers/css/style.scss";
 
-.home-courses-cards-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // width: 100%;
+.home-courses-head-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.home-courses-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

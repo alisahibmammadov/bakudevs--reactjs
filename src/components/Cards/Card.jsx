@@ -7,7 +7,8 @@ function Card({ atHome, cardData, cardsType }) {
       {cardData
         .filter(
           (item) =>
-          cardsType === "all" || item.position.toLowerCase() === cardsType.toLowerCase()
+            cardsType === "all" ||
+            item.position.toLowerCase() === cardsType.toLowerCase()
         )
         .slice(0, atHome ? 8 : undefined)
         .map((item) => (

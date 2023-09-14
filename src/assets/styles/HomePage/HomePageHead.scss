@@ -2,8 +2,9 @@
 @import "../../../helpers/css/style.scss";
 // Mixin End
 .home-head {
+  padding: 0;
   @include flexbox(flex, row, center, center, default);
-  @include box-model(100vw, 100vh, default);
+  @include box-model(100%, 100vh, default);
   background-image: url("../../img/HomePage/HomeBackground.png");
   background-repeat: no-repeat;
   background-size: cover;

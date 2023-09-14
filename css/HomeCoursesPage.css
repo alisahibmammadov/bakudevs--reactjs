@@ -1,3 +1,9 @@
+.home-courses-head-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
 .home-courses-cards-list {
   display: flex;
   flex-wrap: wrap;
