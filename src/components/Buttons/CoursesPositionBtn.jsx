@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { CardData } from "../../data/Card.js";
 import "../../assets/styles/Buttons/CoursesPositionBtn.scss";
 
-function CoursesPositionBtn({ setType, cardsType, setCardsType }) {
+function CoursesPositionBtn({ cardsType, setCardsType }) {
   const [cardData] = useState(CardData);
   const uniquePositions = [...new Set(cardData.map((item) => item.position))];
 

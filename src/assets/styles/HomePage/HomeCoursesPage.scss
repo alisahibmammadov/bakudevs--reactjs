@@ -1,12 +1,9 @@
 @import "../../../helpers/css/style.scss";
 
 .home-courses-head-btns {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  @include flexbox(flex, row, default, flex-end, 20px);
 }
 .home-courses-cards-list {
-  display: flex;
+  @include flexbox(flex, row, default, space-between, 20px);
   flex-wrap: wrap;
-  justify-content: space-between;
 }
