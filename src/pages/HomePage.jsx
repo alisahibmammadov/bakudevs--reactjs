@@ -8,8 +8,8 @@ import HomePageHead from "../components/HomePage/HomePageHead";
 function HomePage() {
   return (
     <>
-    
-    <HomePageHead/></>
+      <HomePageHead />
+    </>
     // <Container fluid className="main-home-page">
     //   <Row className="container main-home-page-row">
     //     <Col lg={6} md={12} className="home-left-side">

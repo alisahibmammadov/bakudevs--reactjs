@@ -14,7 +14,7 @@ export const CardData = [
   {
     id: 1,
     cardImg: Front1,
-    position: "FrontEnd",
+    position: "Frontend",
     lessonNum: "18 dərs",
     info: "Lorem ipsum dolor sit amet",
   },
@@ -56,7 +56,7 @@ export const CardData = [
   {
     id: 7,
     cardImg: Front2,
-    position: "FrontEnd",
+    position: "Frontend",
     lessonNum: "8 dərs",
     info: "Lorem ipsum dolor sit amet",
   },
@@ -70,7 +70,7 @@ export const CardData = [
   {
     id: 9,
     cardImg: Front3,
-    position: "FrontEnd",
+    position: "Frontend",
     lessonNum: "18 dərs",
     info: "Lorem ipsum dolor sit amet",
   },

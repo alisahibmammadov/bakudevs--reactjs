@@ -29,7 +29,7 @@ function Card({ atHome }) {
         {cardData
           .filter(
             (item) =>
-              type === "all" ??
+              type === "all" ||
               item.position.toLowerCase() === type.toLowerCase()
           )
           .slice(0, atHome ? 8 : undefined)

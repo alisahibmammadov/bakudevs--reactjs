@@ -1,4 +1,4 @@
-.main-home-page-head {
+.home-page-head {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,14 +11,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-home-page-head .home-page-head-left-side {
+.home-page-head .home-page-head-left-side {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 47px;
 }
-.main-home-page-head .home-page-head-entry h2 {
+.home-page-head .home-page-head-entry h2 {
   font-family: Lora;
   line-height: 68px;
   text-decoration: default;
@@ -26,7 +26,7 @@
   font-size: 56px;
   font-weight: 600;
 }
-.main-home-page-head .home-page-head-entry h2 .goldenrod {
+.home-page-head .home-page-head-entry h2 .goldenrod {
   font-family: Lora;
   line-height: default;
   text-decoration: default;
@@ -36,7 +36,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .main-home-page-head-row {
+  .home-page-head-row {
     display: flex !important;
     flex-direction: column !important;
     align-items: default;
@@ -62,7 +62,7 @@
   }
 }
 @media only screen and (max-width: 876px) {
-  .main-home-page-head-row {
+  .home-page-head-row {
     display: flex !important;
     flex-direction: column !important;
     align-items: default;
@@ -98,4 +98,4 @@
     flex-shrink: 0;
     margin: 0;
   }
-}/*# sourceMappingURL=HomePage.css.map */
+}/*# sourceMappingURL=HomePageHead.css.map */
