@@ -1,25 +1,23 @@
 @import "../../../helpers/css/style.scss";
-
+// *{
+//   outline: 1px solid red;
+// }
 .main-home-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 100px 0;
+
 }
 .home-courseshead-row{
+  width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
 }
-@media only screen and (max-width: 450px){
-  .home-courses-cards-list{
-    justify-content: center !important;
-  }
-  .home-courses-head{
-    text-align: center !important;
-  }
-  .home-courses-head-btns {
-    justify-content: center !important;
-  }
-}
+
 .home-courses-head {
   h6 {
     @include text-properties(Lora, 68px, default, --dark-charcoal, 41px, 600);
@@ -33,9 +31,30 @@
 }
 .home-courses-cards-list {
   padding: 73px 0;
+  margin: 0 auto;
   @include flexbox(flex, row, default, space-between, 20px);
   flex-wrap: wrap;
 }
+.home-courselist-row{
+  margin: auto;
+}
 .home-allcourses {
-  @include flexbox(flex, row, default, center, default);
+  margin: auto;
+  width: 90%;
+  @include flexbox(flex, row, center, center, default);
+  
+}
+@media only screen and (max-width: 450px){
+  .home-courses-cards-list{
+    justify-content: center !important;
+  }
+  .home-courses-head{
+    text-align: center !important;
+  }
+  .home-courses-head-btns {
+    justify-content: center !important;
+  }
+  .home-allcourses {
+    width: 100%;
+  }
 }

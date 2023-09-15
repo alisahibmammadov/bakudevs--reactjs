@@ -4,7 +4,7 @@ import HomeCoursesPage from "../components/HomePage/HomeCoursesPage";
 
 function HomePage() {
   return (
-    <div style={{display:'flex',flexDirection:'column'}}>
+    <div >
       <HomePageHead />
       <HomeCoursesPage />
     </div>

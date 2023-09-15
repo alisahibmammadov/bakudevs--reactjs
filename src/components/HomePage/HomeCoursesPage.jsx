@@ -33,15 +33,15 @@ function HomeCoursesPage() {
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row  className="home-courselist-row">
         <Col md={12}>
           <div className="home-courses-cards-list">
             <Card atHome cardData={cardData} cardsType={cardsType} />
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col md={12} className="home-allcourses">
+      <Row style={{margin:'auto'}}>
+        <Col md={11} xs={12} className="home-allcourses">
         <AllCoursesBtn/>
         </Col>
       </Row>

@@ -27,7 +27,7 @@ function HomePageHead() {
           </Row>
         </Col>
 
-        <Col lg={6} md={12}>
+        <Col lg={6} md={12} style={{margin:'auto'}}>
           <figure>
             <img src={HomeGirl} alt="Home Girl" className="home-head-girl" />
           </figure>
