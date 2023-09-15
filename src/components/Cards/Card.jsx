@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../assets/styles/Cards/Card.scss";
 
 function Card({ atHome, cardData, cardsType }) {
+  const [num,setNum] = useState(8)
+  useEffect(()=>{
+    if(window.innerWidth < 450){
+      setNum(6)
+    }
+  },[num])
+
   return (
     <>
       {cardData
@@ -10,7 +17,7 @@ function Card({ atHome, cardData, cardsType }) {
             cardsType === "all" ||
             item.position.toLowerCase() === cardsType.toLowerCase()
         )
-        .slice(0, atHome ? 8 : undefined)
+        .slice(0, atHome ? num : undefined)
         .map((item) => (
           <div className="main-card" key={item.id}>
             <img src={item.cardImg} alt="" />

@@ -18,12 +18,12 @@ function HomeCoursesPage() {
   return (
     <Container className="main-home-course">
       <Row className="home-courseshead-row">
-        <Col md={4} sm={12}>
+        <Col md={5} sm={12}>
           <div className="home-courses-head">
             <h6>Populyar Kurslar</h6>
           </div>
         </Col>
-        <Col md={8} sm={12}>
+        <Col md={7} sm={12}>
           <div className="home-courses-head-btns">
             <SeeAllBtn setCardsType={setCardsType} cardsType={cardsType} />
             <CoursesPositionBtn
