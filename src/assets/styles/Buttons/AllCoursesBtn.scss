@@ -1,0 +1,14 @@
+@import "../../../helpers/css/style.scss";
+.all-courses-btn {
+  @include box-model(230px, 55px, 70px);
+  @include flexbox(flex, row, center, center, 13px);
+  @include text-properties(Mulish, normal, none, --light-color, 20px, 700);
+  flex-shrink: 0;
+  background: var(--teal);
+  box-shadow: 0px 16px 40px 0px rgba(1, 94, 100, 0.15);
+  text-decoration: none;
+  &:hover {
+    background: var(--teal-hover);
+    color: var(--light-color);
+  }
+}

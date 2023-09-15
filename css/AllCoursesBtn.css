@@ -1,0 +1,24 @@
+.all-courses-btn {
+  width: 230px;
+  height: 55px;
+  border-radius: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font-family: Mulish;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+  background: var(--teal);
+  box-shadow: 0px 16px 40px 0px rgba(1, 94, 100, 0.15);
+  text-decoration: none;
+}
+.all-courses-btn:hover {
+  background: var(--teal-hover);
+  color: var(--light-color);
+}/*# sourceMappingURL=AllCoursesBtn.css.map */

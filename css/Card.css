@@ -78,5 +78,9 @@
 }
 .main-card .card-info > i {
   font-size: 3.125rem;
-  color: #008d96;
+  color: var(--teal);
+}
+.main-card .card-info > i:hover {
+  cursor: pointer;
+  color: var(--teal-hover);
 }/*# sourceMappingURL=Card.css.map */

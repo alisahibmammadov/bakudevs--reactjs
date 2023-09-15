@@ -59,7 +59,11 @@
     }
     > i {
       font-size: 3.125rem;
-      color: #008d96;
+      color: var(--teal);
+      &:hover{
+        cursor: pointer;
+        color: var(--teal-hover);
+      }
     }
   }
 }
