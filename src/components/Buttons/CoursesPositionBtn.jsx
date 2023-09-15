@@ -4,8 +4,7 @@ import { CardData } from "../../data/Card.js";
 import "../../assets/styles/Buttons/CoursesPositionBtn.scss";
 
 function CoursesPositionBtn({ cardsType, setCardsType }) {
-  const [cardData] = useState(CardData);
-  const uniquePositions = [...new Set(cardData.map((item) => item.position))];
+  const uniquePositions = [...new Set(CardData.map((item) => item.position))];
 
   const [selectedPositionBtn, setSelectedPositionBtn] = useState(null);
   const handleClick = (position) => {
