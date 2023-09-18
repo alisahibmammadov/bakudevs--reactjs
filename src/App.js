@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
 import HomePage from "./pages/HomePage";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
