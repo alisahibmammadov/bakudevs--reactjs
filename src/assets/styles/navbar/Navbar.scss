@@ -1,17 +1,22 @@
 // Mixin Start
 @import "../../../helpers/css/style.scss";
 // Mixin End
+.bg-white{
+  background: #ccc;
+}
+.section-navbar{
 
-.main-navbar {
+  
+  .main-navbar {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  @include flexbox(flex, row, center, space-between, default);
+  @include flexbox(flex, row, center, space-between, initial);
   padding: 28px 0;
   border-color: transparent;
   .navbar__menu-course {
-    @include flexbox(flex, row, center, default, 15px);
+    @include flexbox(flex, row, center, initial, 15px);
     i {
       color: var(--dark-charcoal);
     }
@@ -33,7 +38,7 @@
     }
   }
   .navbar__wishlist {
-    @include flexbox(flex, row, center, default, 15px);
+    @include flexbox(flex, row, center, initial, 15px);
     flex-shrink: 0;
     i {
       color: var(--teal);
@@ -60,6 +65,7 @@
     color: var(--dark-charcoal-hover);
     cursor: pointer;
   }
+}
 }
 // Media
 @media only screen and (max-width: 990px) {

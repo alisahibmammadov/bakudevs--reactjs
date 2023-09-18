@@ -3,23 +3,23 @@
 // Mixin End
 .main-card {
   @include box-model(270px, 347px, 20px);
-  @include flexbox(flex, column, center, flex-start, default);
+  @include flexbox(flex, column, center, flex-start, initial);
   flex-shrink: 0;
   background: #fff;
   box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.09);
   padding: 17px;
   margin: 10px 0;
   .card-pos-lessonNum {
-    @include flexbox(flex, row, center, space-between, default);
+    @include flexbox(flex, row, center, space-between, initial);
     border-bottom: 1px solid #d9d9d9;
     width: 100%;
     padding: 14.6px 0;
     .lesson-num {
-      @include flexbox(flex, row, center, default, 4px);
+      @include flexbox(flex, row, center, initial, 4px);
       @include text-properties(
         Mulish,
         normal,
-        default,
+        initial,
         --list-color,
         16px,
         600
@@ -28,11 +28,11 @@
     }
     > h3 {
       @include box-model(90px, 31px, 8px);
-      @include flexbox(flex, row, center, center, default);
+      @include flexbox(flex, row, center, center, initial);
       @include text-properties(
         Mulish,
         normal,
-        default,
+        initial,
         --dark-charcoal,
         16px,
         600
@@ -43,18 +43,18 @@
     }
   }
   .card-info {
-    @include flexbox(flex, row, center, default, default);
+    @include flexbox(flex, row, center, initial, initial);
     padding: 15px 0;
     span {
       @include text-properties(
         Mulish,
         normal,
-        default,
+        initial,
         --dark-charcoal,
         18px,
         700
       );
-      @include box-model(169px, 60px, default);
+      @include box-model(169px, 60px, initial);
       flex-shrink: 0;
     }
     > i {

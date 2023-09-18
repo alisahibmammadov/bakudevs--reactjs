@@ -3,18 +3,14 @@
 //   outline: 1px solid red;
 // }
 .main-home-course {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flexbox(flex,column,initial,center,initial);
   padding: 100px 0;
 
 }
 .home-courseshead-row{
   width: 100%;
   margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  @include flexbox(flex,initial,center,space-evenly,initial);
 
 }
 
@@ -26,7 +22,7 @@
 .home-courses-head-btns {
   margin: 0;
   padding: 11px 0;
-  @include flexbox(flex, row, default, flex-end, 20px);
+  @include flexbox(flex, row, initial, flex-end, 20px);
   flex-wrap: wrap;
 }
 .home-courses-cards-list {
@@ -41,7 +37,7 @@
 .home-allcourses {
   margin: auto;
   width: 90%;
-  @include flexbox(flex, row, center, center, default);
+  @include flexbox(flex, row, center, center, initial);
   
 }
 @media only screen and (max-width: 450px){

@@ -31,7 +31,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: default;
+  gap: initial;
   align-self: flex-end;
 }
 .xmark i {
@@ -48,15 +48,15 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: default;
-  gap: default;
+  justify-content: initial;
+  gap: initial;
 }
 .frontend-row ul li,
 .backend-row ul li,
 .uiux-row ul li {
   font-family: Mulish;
   line-height: normal;
-  text-decoration: default;
+  text-decoration: initial;
   color: var(--list-color);
   font-size: 20px;
   font-weight: 500;
@@ -67,7 +67,7 @@ body {
 .uiux-row h2 {
   font-family: Mulish;
   line-height: normal;
-  text-decoration: default;
+  text-decoration: initial;
   color: var(--dark-charcoal);
   font-size: 32px;
   font-weight: 700;
@@ -82,7 +82,7 @@ body {
 .mobile-menu-bottom {
   display: flex;
   flex-direction: column;
-  align-items: default;
+  align-items: initial;
   justify-content: flex-end;
   gap: 20px;
   width: 100% !important;
@@ -93,14 +93,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: default;
+  justify-content: initial;
   gap: 14px;
 }
 .mobile-menu-bottom .mobile-wishlist h2 {
   cursor: pointer;
   font-family: Mulish;
   line-height: normal;
-  text-decoration: default;
+  text-decoration: initial;
   color: var(--dark-charcoal);
   font-size: 20px;
   font-weight: 600;

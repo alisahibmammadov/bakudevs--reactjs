@@ -24,7 +24,7 @@ body {
   right: 10%;
 }
 .xmark {
-  @include flexbox(flex, row, center, flex-end, default);
+  @include flexbox(flex, row, center, flex-end, initial);
   align-self: flex-end;
   i {
     font-size: 2.5rem;
@@ -37,16 +37,16 @@ body {
 .frontend-row,
 .backend-row,
 .uiux-row {
-  @include flexbox(flex, row, flex-start, default, default);
+  @include flexbox(flex, row, flex-start, initial, initial);
   ul li {
-    @include text-properties(Mulish, normal, default, --list-color, 20px, 500);
+    @include text-properties(Mulish, normal, initial, --list-color, 20px, 500);
     list-style-type: none;
   }
   h2 {
     @include text-properties(
       Mulish,
       normal,
-      default,
+      initial,
       --dark-charcoal,
       32px,
       700
@@ -62,18 +62,18 @@ body {
 }
 
 .mobile-menu-bottom {
-  @include flexbox(flex, column, default, flex-end, 20px);
+  @include flexbox(flex, column, initial, flex-end, 20px);
   width: 100% !important;
   border-top: 1px solid var(--border-color);
   padding: 20px 0 0;
   .mobile-wishlist {
-    @include flexbox(flex, row, center, default, 14px);
+    @include flexbox(flex, row, center, initial, 14px);
     h2 {
       cursor: pointer;
       @include text-properties(
         Mulish,
         normal,
-        default,
+        initial,
         --dark-charcoal,
         20px,
         600

@@ -1,4 +1,8 @@
-.main-navbar {
+.bg-white {
+  background: #ccc;
+}
+
+.section-navbar .main-navbar {
   position: fixed;
   top: 0;
   left: 50%;
@@ -7,21 +11,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: default;
+  gap: initial;
   padding: 28px 0;
   border-color: transparent;
 }
-.main-navbar .navbar__menu-course {
+.section-navbar .main-navbar .navbar__menu-course {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: default;
+  justify-content: initial;
   gap: 15px;
 }
-.main-navbar .navbar__menu-course i {
+.section-navbar .main-navbar .navbar__menu-course i {
   color: var(--dark-charcoal);
 }
-.main-navbar .navbar__menu-course .course-link {
+.section-navbar .main-navbar .navbar__menu-course .course-link {
   font-family: Mulish;
   line-height: normal;
   text-decoration: none;
@@ -29,22 +33,22 @@
   font-size: 22px;
   font-weight: 600;
 }
-.main-navbar .navbar__menu-course:hover .course-link, .main-navbar .navbar__menu-course:hover i, .main-navbar .navbar__menu-course:hover {
+.section-navbar .main-navbar .navbar__menu-course:hover .course-link, .section-navbar .main-navbar .navbar__menu-course:hover i, .section-navbar .main-navbar .navbar__menu-course:hover {
   cursor: pointer;
   color: var(--dark-charcoal-hover);
 }
-.main-navbar .navbar__wishlist {
+.section-navbar .main-navbar .navbar__wishlist {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: default;
+  justify-content: initial;
   gap: 15px;
   flex-shrink: 0;
 }
-.main-navbar .navbar__wishlist i {
+.section-navbar .main-navbar .navbar__wishlist i {
   color: var(--teal);
 }
-.main-navbar .navbar__wishlist .wishlist-link {
+.section-navbar .main-navbar .navbar__wishlist .wishlist-link {
   font-family: Mulish;
   line-height: normal;
   text-decoration: none;
@@ -53,22 +57,21 @@
   font-weight: 700;
   text-align: center;
 }
-.main-navbar .navbar__wishlist:hover .wishlist-link, .main-navbar .navbar__wishlist:hover i, .main-navbar .navbar__wishlist:hover {
+.section-navbar .main-navbar .navbar__wishlist:hover .wishlist-link, .section-navbar .main-navbar .navbar__wishlist:hover i, .section-navbar .main-navbar .navbar__wishlist:hover {
   cursor: pointer;
   color: var(--teal-hover);
 }
-.main-navbar .navbar__btn-boxes {
+.section-navbar .main-navbar .navbar__btn-boxes {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: default;
   gap: 11px;
 }
-
-.menu-icon-box {
+.section-navbar .menu-icon-box {
   display: none;
 }
-.menu-icon-box:hover {
+.section-navbar .menu-icon-box:hover {
   color: var(--dark-charcoal-hover);
   cursor: pointer;
 }

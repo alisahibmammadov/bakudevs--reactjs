@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: default;
+  gap: initial;
   flex-shrink: 0;
   background: #fff;
   box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.09);
@@ -18,7 +18,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: default;
+  gap: initial;
   border-bottom: 1px solid #d9d9d9;
   width: 100%;
   padding: 14.6px 0;
@@ -27,11 +27,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: default;
+  justify-content: initial;
   gap: 4px;
   font-family: Mulish;
   line-height: normal;
-  text-decoration: default;
+  text-decoration: initial;
   color: var(--list-color);
   font-size: 16px;
   font-weight: 600;
@@ -45,10 +45,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: default;
+  gap: initial;
   font-family: Mulish;
   line-height: normal;
-  text-decoration: default;
+  text-decoration: initial;
   color: var(--dark-charcoal);
   font-size: 16px;
   font-weight: 600;
@@ -60,20 +60,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: default;
-  gap: default;
+  justify-content: initial;
+  gap: initial;
   padding: 15px 0;
 }
 .main-card .card-info span {
   font-family: Mulish;
   line-height: normal;
-  text-decoration: default;
+  text-decoration: initial;
   color: var(--dark-charcoal);
   font-size: 18px;
   font-weight: 700;
   width: 169px;
   height: 60px;
-  border-radius: default;
+  border-radius: initial;
   flex-shrink: 0;
 }
 .main-card .card-info > i {
