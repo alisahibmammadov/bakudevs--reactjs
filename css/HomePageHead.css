@@ -1,5 +1,4 @@
 .home-head {
-  padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,6 +18,9 @@
   justify-content: center;
   gap: 47px;
 }
+.home-head .home-head-row {
+  margin-top: 100px 0 !important;
+}
 .home-head .home-head-entry h2 {
   font-family: Lora;
   line-height: 68px;
@@ -36,7 +38,13 @@
   font-weight: 600;
 }
 
-@media only screen and (max-width: 950px) {
+.home-head-girl {
+  display: flex;
+  flex-shrink: 2;
+  max-width: 90%;
+}
+
+@media only screen and (max-width: 992px) {
   .home-head-left-side {
     display: flex !important;
     flex-direction: column !important;
@@ -53,7 +61,9 @@
     font-size: 26px !important;
   }
   .home-head-girl {
-    width: 500px !important;
+    margin: auto !important;
+    width: 60% !important;
+    flex-shrink: 2;
   }
 }
 @media only screen and (max-width: 876px) {
@@ -95,10 +105,7 @@
     font-size: 26px !important;
   }
   .home-head-girl {
-    width: 279px !important;
-    height: 242px !important;
-    border-radius: default;
-    flex-shrink: 0;
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 280px) {
@@ -106,7 +113,6 @@
     width: 230px;
     height: 222px;
     border-radius: default;
-    flex-shrink: 0;
     margin: 0;
   }
 }/*# sourceMappingURL=HomePageHead.css.map */

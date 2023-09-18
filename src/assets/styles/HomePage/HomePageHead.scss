@@ -2,7 +2,6 @@
 @import "../../../helpers/css/style.scss";
 // Mixin End
 .home-head {
-  padding: 0;
   @include flexbox(flex, row, center, center, default);
   @include box-model(100%, 100vh, default);
   background-image: url("../../img/HomePage/HomeBackground.png");
@@ -10,6 +9,9 @@
   background-size: cover;
   .home-head-left-side {
     @include flexbox(flex, column, flex-start, center, 47px);
+  }
+  .home-head-row{
+    margin-top: 100px 0 !important; 
   }
   .home-head-entry {
     h2 {
@@ -27,7 +29,12 @@
     }
   }
 }
-@media only screen and (max-width: 950px) {
+.home-head-girl{
+  display: flex;
+  flex-shrink: 2;
+  max-width: 90%;
+}
+@media only screen and (max-width: 992px) {
   .home-head-left-side {
     @include flexbox(
       flex !important,
@@ -48,7 +55,9 @@
     }
   }
   .home-head-girl {
-    width: 500px !important;
+    margin: auto !important;
+    width: 60% !important;
+    flex-shrink: 2;
   }
 }
 
@@ -103,8 +112,7 @@
     }
   }
   .home-head-girl {
-    @include box-model(279px !important, 242px !important, default);
-    flex-shrink: 0;
+    width: 100% !important;
   }
 }
 
@@ -125,7 +133,6 @@
 @media only screen and (max-width: 280px) {
   .home-head-girl {
     @include box-model(230px, 222px, default);
-    flex-shrink: 0;
     margin: 0;
   }
 }

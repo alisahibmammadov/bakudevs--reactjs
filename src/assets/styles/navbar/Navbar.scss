@@ -3,12 +3,13 @@
 // Mixin End
 
 .main-navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   @include flexbox(flex, row, center, space-between, default);
   padding: 28px 0;
+  border-color: transparent;
   .navbar__menu-course {
     @include flexbox(flex, row, center, default, 15px);
     i {

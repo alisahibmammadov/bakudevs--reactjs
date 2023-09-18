@@ -1,5 +1,5 @@
 .main-navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: default;
   padding: 28px 0;
+  border-color: transparent;
 }
 .main-navbar .navbar__menu-course {
   display: flex;

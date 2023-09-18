@@ -38,7 +38,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  align-items: default;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
@@ -67,6 +67,17 @@
   }
   .home-courses-head-btns {
     justify-content: center !important;
+  }
+  .home-allcourses {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-courses-cards-list {
+    justify-content: center !important;
+  }
+  .home-courses-head {
+    text-align: center !important;
   }
   .home-allcourses {
     width: 100%;
