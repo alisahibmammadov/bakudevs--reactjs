@@ -45,6 +45,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .home-head {
+    padding-top: 20px !important;
+  }
   .home-head-left-side {
     display: flex !important;
     flex-direction: column !important;
@@ -55,7 +58,7 @@
   }
   .home-head-entry h2 {
     font-size: 26px !important;
-    line-height: 20px !important;
+    line-height: 25px !important;
   }
   .home-head-entry h2 span {
     font-size: 26px !important;
