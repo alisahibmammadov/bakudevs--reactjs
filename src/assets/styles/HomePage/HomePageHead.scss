@@ -2,7 +2,7 @@
 @import "../../../helpers/css/style.scss";
 // Mixin End
 .home-head {
-  @include flexbox(flex, row, center, center, default);
+  @include flexbox(flex, row, center, center, initial);
   @include box-model(100%, 100vh, default);
   background-image: url("../../img/HomePage/HomeBackground.png");
   background-repeat: no-repeat;
@@ -10,12 +10,14 @@
   .home-head-left-side {
     @include flexbox(flex, column, flex-start, center, 47px);
   }
-  .home-head-row{
-    margin-top: 100px 0 !important; 
+  .home-head-row {
+    margin-top: 100px 0 !important;
+    // display: flex !important;
+    // gap: 20px ;
   }
   .home-head-entry {
     h2 {
-      @include text-properties(Lora, 68px, default, --dark-charcoal, 56px, 600);
+      @include text-properties(Lora, 68px, initial, --dark-charcoal, 56px, 600);
       .goldenrod {
         @include text-properties(
           Lora,
@@ -29,13 +31,22 @@
     }
   }
 }
-.home-head-girl{
+.home-head-girl {
   display: flex;
   flex-shrink: 2;
   max-width: 90%;
 }
 @media only screen and (max-width: 992px) {
-  .home-head{
+  .home-head-row {
+    @include flexbox(
+      flex !important,
+      column !important,
+      initial,
+      initial,
+      20px !important
+    );
+  }
+  .home-head {
     padding-top: 20px !important;
   }
   .home-head-left-side {
@@ -43,8 +54,8 @@
       flex !important,
       column !important,
       center !important,
-      default,
-      default
+      initial,
+      initial
     );
     margin-top: 20px !important;
   }
@@ -69,9 +80,9 @@
     @include flexbox(
       flex !important,
       column !important,
-      default,
-      default,
-      50px !important
+      initial,
+      initial,
+      20px !important
     );
   }
 
@@ -80,8 +91,8 @@
       flex !important,
       column !important,
       center !important,
-      default,
-      default
+      initial,
+      initial
     );
   }
   .home-head-entry {
@@ -95,9 +106,9 @@
     @include flexbox(
       flex !important,
       column !important,
-      default,
-      default,
-      50px !important
+      initial,
+      initial,
+      30px !important
     );
   }
 
@@ -119,24 +130,9 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 280px) {
   .home-head-girl {
     @include box-model(230px, 222px, default);
     margin: 0;
   }
 }
-

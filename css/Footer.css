@@ -10,58 +10,67 @@
 .main-footer .footer-container {
   display: flex;
   flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
   gap: 100px;
 }
 .main-footer .footer-container .footer-head {
   display: flex;
   flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
   gap: 20px;
 }
 .main-footer .footer-container .footer-head img {
   width: 170px;
   height: 28px;
+  border-radius: initial;
 }
 .main-footer .footer-container .footer-head p {
-  color: var(--light-color);
   font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 26px;
+  text-decoration: initial;
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 500;
 }
 .main-footer .footer-container ul {
   display: flex;
   flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
   gap: 20px;
 }
 .main-footer .footer-container ul .router-link {
   text-decoration: none;
 }
 .main-footer .footer-container ul li {
-  color: var(--light-color);
   font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  text-decoration: initial;
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 500;
   cursor: pointer;
 }
 .main-footer .footer-container ul li:hover {
   color: var(--light-color-hover);
 }
 .main-footer .footer-container .form-box {
-  max-width: 390px;
   display: flex;
   flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
   gap: 20px;
+  max-width: 390px;
 }
 .main-footer .footer-container .form-box h4 {
-  color: var(--light-color);
   font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  text-decoration: initial;
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 500;
 }
 .main-footer .footer-container .form-box h4 h3 {
   font-size: 18px;
@@ -75,16 +84,16 @@
 .main-footer .footer-container .form-box form input {
   width: 100%;
   height: 100%;
-  flex-shrink: 0;
   border-radius: 60px;
-  border: 1px solid rgba(0, 141, 150, 0.5);
-  background: #fff;
-  color: #c4c4c4;
   font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  text-decoration: initial;
+  color: var(#c4c4c4);
+  font-size: 18px;
+  font-weight: 500;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 141, 150, 0.5);
+  background: var(--light-color);
   padding-left: 30px;
   outline: none;
 }
@@ -94,8 +103,8 @@
   right: 0;
   width: 80px;
   height: 50px;
-  flex-shrink: 0;
   border-radius: 60px;
+  flex-shrink: 0;
   background: var(--goldenrod);
   border: transparent;
 }
@@ -108,40 +117,46 @@
   font-size: 1.8rem;
 }
 .main-footer .footer-copyright {
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: flex-start;
+  gap: initial;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 100%;
 }
 .main-footer .footer-copyright p {
-  color: var(--light-color);
   font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(--light-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
 }
 .main-footer .footer-jedai {
   display: flex;
+  flex-direction: initial;
+  align-items: initial;
   justify-content: flex-end;
+  gap: initial;
 }
 .main-footer .footer-jedai h3 {
-  color: var(--light-color);
-  text-align: right;
   font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(--light-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
   .footer-row {
     display: flex;
-    justify-content: center !important;
+    flex-direction: initial;
     align-items: center !important;
+    justify-content: center !important;
     gap: 30px;
   }
 }/*# sourceMappingURL=Footer.css.map */

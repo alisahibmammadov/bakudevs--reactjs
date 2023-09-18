@@ -1,59 +1,57 @@
-
+// Mixin Start
+@import "../../../helpers/css/style.scss";
+// Mixin End
 .main-footer {
   .footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    @include flexbox(flex, column, initial, initial, 100px);
     .footer-head {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      @include flexbox(flex, column, initial, initial, 20px);
       img {
-        width: 170px;
-        height: 28px;
+        @include box-model(170px, 28px, initial);
       }
       p {
-        color: var(--light-color);
-        font-family: Mulish;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 26px;
+        @include text-properties(
+          Mulish,
+          26px,
+          initial,
+          --light-color,
+          18px,
+          500
+        );
       }
     }
     ul {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      .router-link{
+      @include flexbox(flex, column, initial, initial, 20px);
+      .router-link {
         text-decoration: none;
       }
       li {
-        color: var(--light-color);
-        font-family: Mulish;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+        @include text-properties(
+          Mulish,
+          normal,
+          initial,
+          --light-color,
+          20px,
+          500
+        );
         cursor: pointer;
-        &:hover{
-            color: var(--light-color-hover);
+        &:hover {
+          color: var(--light-color-hover);
         }
       }
     }
     .form-box {
+      @include flexbox(flex, column, initial, initial, 20px);
       max-width: 390px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      // flex-shrink: 1;
       h4 {
-        color: var(--light-color);
-        font-family: Mulish;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+        @include text-properties(
+          Mulish,
+          normal,
+          initial,
+          --light-color,
+          18px,
+          500
+        );
         h3 {
           font-size: 18px;
           font-weight: 700;
@@ -64,18 +62,11 @@
         height: 50px;
         position: relative;
         input {
-          width: 100%;
-          height: 100%;
+          @include box-model(100%, 100%, 60px);
+          @include text-properties(Mulish, normal, initial, #c4c4c4, 18px, 500);
           flex-shrink: 0;
-          border-radius: 60px;
           border: 1px solid rgba(0, 141, 150, 0.5);
-          background: #fff;
-          color: #c4c4c4;
-          font-family: Mulish;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+          background: var(--light-color);
           padding-left: 30px;
           outline: none;
         }
@@ -83,13 +74,11 @@
           position: absolute;
           top: 0;
           right: 0;
-          width: 80px;
-          height: 50px;
+          @include box-model(80px, 50px, 60px);
           flex-shrink: 0;
-          border-radius: 60px;
           background: var(--goldenrod);
           border: transparent;
-          &:hover{
+          &:hover {
             background: var(--dark-charcoal-hover);
           }
           i {
@@ -101,6 +90,7 @@
       }
     }
   }
+
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,41 +99,25 @@
   align-items: center;
   padding: 80px 20px;
   .footer-copyright {
+    @include flexbox(flex, initial, center, flex-start, initial);
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     height: 100%;
     p {
-      color: var(--light-color);
-      font-family: Mulish;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 26px; /* 162.5% */
+      @include text-properties(Mulish, 26px, initial, --light-color, 16px, 500);
     }
   }
   .footer-jedai {
-    display: flex;
-    justify-content: flex-end;
+    @include flexbox(flex, initial, initial, flex-end, initial);
     h3 {
-      color: var(--light-color);
+      @include text-properties(Mulish, 26px, initial, --light-color, 16px, 500);
       text-align: right;
-      font-family: Mulish;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 26px; /* 162.5% */
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .footer-row {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 30px;
+    @include flexbox(flex, initial, center !important, center !important, 30px);
   }
 }
