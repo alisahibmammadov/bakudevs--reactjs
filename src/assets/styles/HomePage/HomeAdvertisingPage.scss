@@ -121,6 +121,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+    .main-advertising {
+        padding: 60px 20px;
+    }
   .advertising-head {
     h2 {
       font-size: 31px !important;
@@ -140,8 +143,8 @@
 }
 @media only screen and (max-width: 450px) {
   .advertising-img {
-    width: 300px !important;
-    height: 300px !important;
+    width: 280px !important;
+    height: 280px !important;
   }
   .advertising-head {
     h2 {
@@ -155,6 +158,9 @@
   }
 }
 @media only screen and (max-width: 320px) {
+    .main-advertising {
+        padding: 40px 20px;
+    }
   .advertising-head {
     h2 {
       font-size: 16px !important;
