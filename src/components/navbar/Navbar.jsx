@@ -8,6 +8,11 @@ import LoginBtn from "../Buttons/LoginBtn";
 function Navbar({ menu, setMenu }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
+
+  const handleClick = ()=>{
+    setMenu(!menu)
+  }
+
   function handleScroll() {
     if (window.screenY > 0) {
       setIsScrolled(true);
@@ -23,7 +28,7 @@ function Navbar({ menu, setMenu }) {
   }, []);
 
   return (
-    <section className={`section-navbar ${isScrolled ? '.bg-white' : ""}`}>
+    <section className={`section-navbar ${isScrolled ? 'bg-white' : ""}`}>
       <nav className="container main-navbar">
         <Link to="/">
           <img src={WebLogo} alt="WebSite Logo" className="web-logo" />
