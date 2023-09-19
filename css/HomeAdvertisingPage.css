@@ -9,27 +9,32 @@
 .main-advertising .advertising-container .advertising-head-row .advertising-head {
   display: flex;
   flex-direction: column;
+  align-items: initial;
+  justify-content: initial;
   gap: 20px;
 }
 .main-advertising .advertising-container .advertising-head-row .advertising-head h2 {
-  color: #1b2221;
   font-family: Lora;
-  font-size: 41px;
-  font-style: normal;
-  font-weight: 600;
   line-height: 68px;
+  text-decoration: initial;
+  color: var(--dark-charcoal);
+  font-size: 41px;
+  font-weight: 600;
 }
 .main-advertising .advertising-container .advertising-head-row .advertising-head p {
-  color: #1b2221;
   font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 36px;
+  text-decoration: initial;
+  color: var(--dark-charcoal);
+  font-size: 20px;
+  font-weight: 500;
 }
 .main-advertising .advertising-container .advertising-cards-row {
   display: flex;
+  flex-direction: initial;
   align-items: center;
+  justify-content: initial;
+  gap: initial;
 }
 .main-advertising .advertising-container .advertising-cards-row .advertising-cards-box {
   display: flex;
@@ -45,57 +50,63 @@
 .main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card {
   width: 296px;
   height: 280px;
-  flex-shrink: 0;
   border-radius: 30px;
-  background: #fff;
-  box-shadow: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: initial;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
 }
 .main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card i {
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
   border-radius: 14px;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: center;
+  gap: initial;
+  flex-shrink: 0;
   background: #f57170;
   color: var(--light-color);
   font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card h3 {
-  color: #1b2221;
-  text-align: center;
   font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
   line-height: normal;
+  text-decoration: initial;
+  color: var(--dark-charcoal);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 .main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card p {
   width: 260px;
   height: 68px;
+  border-radius: initial;
   flex-shrink: 0;
-  color: #939393;
-  text-align: center;
   font-family: Mulish;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 20px;
+  text-decoration: initial;
+  color: var(--list-color);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
 }
 .main-advertising .advertising-container .advertising-cards-row .advertising-img {
-  margin: auto;
   display: flex;
+  flex-direction: initial;
   align-items: center;
   justify-content: center;
+  gap: initial;
+  margin: auto;
   width: 465px;
   height: 465px;
-  flex-shrink: 1;
   border-radius: 50%;
+  flex-shrink: 1;
   background: #d3eaeb;
   position: relative;
   overflow: hidden;
@@ -123,6 +134,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: initial;
     gap: 20px !important;
   }
 }

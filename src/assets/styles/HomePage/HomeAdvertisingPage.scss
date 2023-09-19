@@ -1,39 +1,6 @@
-@mixin flexbox(
-  $display,
-  $flex-direction,
-  $align-items,
-  $justify-content,
-  $gap
-) {
-  display: $display;
-  flex-direction: $flex-direction;
-  align-items: $align-items;
-  justify-content: $justify-content;
-  gap: $gap;
-}
-@mixin text-properties(
-  $font-family,
-  $line-height,
-  $text-decoration,
-  $color,
-  $font-size,
-  $font-weight
-) {
-  font-family: $font-family;
-  line-height: $line-height;
-  text-decoration: $text-decoration;
-  color: var($color);
-  font-size: $font-size;
-  font-weight: $font-weight;
-}
-
-@mixin box-model($width, $height, $border-radius) {
-  width: $width;
-  height: $height;
-  border-radius: $border-radius;
-}
-// @include flexbox(, -direction, -items, -content, )
-
+// Mixin Start
+@import "../../../helpers/css/style.scss";
+// Mixin End
 .main-advertising {
   background: #e3f1f2;
   padding: 120px 20px;
@@ -42,30 +9,31 @@
     .advertising-head-row {
       margin-bottom: 44px;
       .advertising-head {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
+        @include flexbox(flex, column, initial, initial, 20px);
         h2 {
-          color: #1b2221;
-          font-family: Lora;
-          font-size: 41px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 68px;
+          @include text-properties(
+            Lora,
+            68px,
+            initial,
+            --dark-charcoal,
+            41px,
+            600
+          );
         }
         p {
-          color: #1b2221;
-          font-family: Mulish;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 36px;
+          @include text-properties(
+            Mulish,
+            36px,
+            initial,
+            --dark-charcoal,
+            20px,
+            500
+          );
         }
       }
     }
     .advertising-cards-row {
-      display: flex;
-      align-items: center;
+      @include flexbox(flex, initial, center, initial, initial);
       .advertising-cards-box {
         display: flex;
         flex-wrap: wrap;
@@ -77,60 +45,50 @@
           margin-top: 26px;
         }
         .advertising-card {
-          width: 296px;
-          height: 280px;
+          @include box-model(296px, 280px, 30px);
+          @include flexbox(flex, column, center, center, initial);
           flex-shrink: 0;
-          border-radius: 30px;
           background: #fff;
           box-shadow: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
           i {
-            width: 60px;
-            height: 60px;
+            @include box-model(60px, 60px, 14px);
+            @include flexbox(flex, initial, center, center, initial);
             flex-shrink: 0;
-            border-radius: 14px;
             background: #f57170;
             color: var(--light-color);
             font-size: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
           }
           h3 {
-            color: #1b2221;
+            @include text-properties(
+              Mulish,
+              normal,
+              initial,
+              --dark-charcoal,
+              20px,
+              700
+            );
             text-align: center;
-            font-family: Mulish;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
           }
           p {
-            width: 260px;
-            height: 68px;
+            @include box-model(260px, 68px, initial);
             flex-shrink: 0;
-            color: #939393;
+            @include text-properties(
+              Mulish,
+              20px,
+              initial,
+              --list-color,
+              13px,
+              500
+            );
             text-align: center;
-            font-family: Mulish;
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 20px;
           }
         }
       }
       .advertising-img {
+        @include flexbox(flex, initial, center, center, initial);
         margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 465px;
-        height: 465px;
+        @include box-model(465px, 465px, 50%);
         flex-shrink: 1;
-        border-radius: 50%;
         background: #d3eaeb;
         position: relative;
         overflow: hidden;
@@ -159,10 +117,7 @@
   }
 
   .advertising-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px !important;
+    @include flexbox(flex, column, center, initial, 20px !important);
   }
 }
 @media only screen and (max-width: 768px) {
