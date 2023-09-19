@@ -1,8 +1,12 @@
 .main-advertising {
   background: #e3f1f2;
-  padding: 120px 0;
+  padding: 120px 20px;
+  overflow: hidden;
 }
-.main-advertising .advertising-head-row .advertising-head h2 {
+.main-advertising .advertising-container .advertising-head-row {
+  margin-bottom: 44px;
+}
+.main-advertising .advertising-container .advertising-head-row .advertising-head h2 {
   color: #1b2221;
   font-family: Lora;
   font-size: 41px;
@@ -10,7 +14,7 @@
   font-weight: 600;
   line-height: 68px;
 }
-.main-advertising .advertising-head-row .advertising-head p {
+.main-advertising .advertising-container .advertising-head-row .advertising-head p {
   color: #1b2221;
   font-family: Mulish;
   font-size: 20px;
@@ -18,16 +22,22 @@
   font-weight: 500;
   line-height: 36px;
 }
-.main-advertising .advertising-cards-row {
+.main-advertising .advertising-container .advertising-cards-row {
   display: flex;
   align-items: center;
 }
-.main-advertising .advertising-cards-row .advertising-cards-box {
+.main-advertising .advertising-container .advertising-cards-row .advertising-cards-box {
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
+  height: 100%;
+  margin: auto;
+  max-width: 100%;
 }
-.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card {
+.main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card:nth-child(even) {
+  margin-top: 26px;
+}
+.main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card {
   width: 296px;
   height: 280px;
   flex-shrink: 0;
@@ -39,7 +49,7 @@
   align-items: center;
   justify-content: center;
 }
-.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card i {
+.main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card i {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
@@ -51,7 +61,7 @@
   align-items: center;
   justify-content: center;
 }
-.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card h3 {
+.main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card h3 {
   color: #1b2221;
   text-align: center;
   font-family: Mulish;
@@ -60,7 +70,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card p {
+.main-advertising .advertising-container .advertising-cards-row .advertising-cards-box .advertising-card p {
   width: 260px;
   height: 68px;
   flex-shrink: 0;
@@ -70,23 +80,84 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 153.846% */
+  line-height: 20px;
 }
-.main-advertising .advertising-cards-row .advertising-img {
+.main-advertising .advertising-container .advertising-cards-row .advertising-img {
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 465px;
   height: 465px;
+  flex-shrink: 1;
   border-radius: 50%;
   background: #d3eaeb;
   position: relative;
   overflow: hidden;
+  max-width: 99%;
 }
-.main-advertising .advertising-cards-row .advertising-img > img {
+.main-advertising .advertising-container .advertising-cards-row .advertising-img > img {
   position: absolute;
   bottom: 0%;
   width: 70%;
   height: 90%;
+}
+
+@media only screen and (max-width: 992px) {
+  .advertising-head {
+    text-align: center;
+  }
+  .advertising-cards-row,
+  .advertising-cards-box {
+    justify-content: center;
+  }
+  .advertising-img {
+    margin: 30px auto !important;
+  }
+  .advertising-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .advertising-head h2 {
+    font-size: 31px !important;
+    line-height: 48px !important;
+  }
+  .advertising-head p {
+    font-size: 18px !important;
+  }
+  .advertising-img {
+    width: 365px !important;
+    height: 365px !important;
+  }
+  .advertising-card {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .advertising-img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .advertising-head h2 {
+    font-size: 21px !important;
+    line-height: 30px !important;
+  }
+  .advertising-head p {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .advertising-head h2 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .advertising-head p {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
 }/*# sourceMappingURL=HomeAdvertisingPage.css.map */

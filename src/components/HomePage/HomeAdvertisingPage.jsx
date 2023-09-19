@@ -6,7 +6,7 @@ import "../../assets/styles/HomePage/HomeAdvertisingPage.scss";
 function HomeAdvertisingPage() {
   return (
     <main className="main-advertising">
-      <Container>
+      <Container className="advertising-container">
         <Row className="advertising-head-row">
           <Col>
             <div className="advertising-head">
@@ -19,7 +19,7 @@ function HomeAdvertisingPage() {
           </Col>
         </Row>
         <Row className="advertising-cards-row">
-          <Col md={6}>
+          <Col lg={6} md={12} xs={12} >
             <div className="advertising-cards-box">
               <div className="advertising-card">
                 <i class="fa-solid fa-money-bill"></i>
@@ -55,7 +55,7 @@ function HomeAdvertisingPage() {
               </div>
             </div>
           </Col>
-          <Col lg={6} style={{background:"red"}}>
+          <Col lg={6} md={12} xs={12} >
             <div className="advertising-img">
               <img src={AdvertisingBoy} alt="" />
             </div>
