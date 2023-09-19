@@ -1,0 +1,92 @@
+.main-advertising {
+  background: #e3f1f2;
+  padding: 120px 0;
+}
+.main-advertising .advertising-head-row .advertising-head h2 {
+  color: #1b2221;
+  font-family: Lora;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 68px;
+}
+.main-advertising .advertising-head-row .advertising-head p {
+  color: #1b2221;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+.main-advertising .advertising-cards-row {
+  display: flex;
+  align-items: center;
+}
+.main-advertising .advertising-cards-row .advertising-cards-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card {
+  width: 296px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card i {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #f57170;
+  color: var(--light-color);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card h3 {
+  color: #1b2221;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main-advertising .advertising-cards-row .advertising-cards-box .advertising-card p {
+  width: 260px;
+  height: 68px;
+  flex-shrink: 0;
+  color: #939393;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 153.846% */
+}
+.main-advertising .advertising-cards-row .advertising-img {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  background: #d3eaeb;
+  position: relative;
+  overflow: hidden;
+}
+.main-advertising .advertising-cards-row .advertising-img > img {
+  position: absolute;
+  bottom: 0%;
+  width: 70%;
+  height: 90%;
+}/*# sourceMappingURL=HomeAdvertisingPage.css.map */

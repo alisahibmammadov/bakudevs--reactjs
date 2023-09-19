@@ -1,0 +1,107 @@
+.main-advertising {
+  background: #e3f1f2;
+  padding: 120px 0;
+  .advertising-head-row {
+    .advertising-head {
+      h2 {
+        color: #1b2221;
+        font-family: Lora;
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 68px;
+      }
+      p {
+        color: #1b2221;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+      }
+    }
+  }
+  .advertising-cards-row {
+    display: flex;
+    align-items: center;
+    .advertising-cards-box {
+      display: flex;
+      flex-wrap: wrap;
+    //   justify-content: space-between;
+      gap: 26px;
+      .advertising-card {
+        width: 296px;
+        height: 280px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i {
+          width: 60px;
+          height: 60px;
+          flex-shrink: 0;
+          border-radius: 14px;
+          background: #f57170;
+          color: var(--light-color);
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        h3 {
+          color: #1b2221;
+          text-align: center;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        p {
+          width: 260px;
+          height: 68px;
+          flex-shrink: 0;
+          color: #939393;
+          text-align: center;
+          font-family: Mulish;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 153.846% */
+        }
+      }
+    }
+    .advertising-img {
+        margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 465px;
+    //   height: 100%;
+    //   max-width: 90%;
+      //   max-width: 70%;
+      height: 465px;
+    //   height: 90%;
+      //   max-height: 465px;
+      // height: auto;
+    //   flex-shrink: 1;
+      border-radius: 50%;
+      background: #d3eaeb;
+      position: relative;
+      overflow: hidden;
+      > img {
+        position: absolute;
+        bottom: 0%;
+        width: 70%;
+        // height: auto;
+        height: 90%;
+        // object-fit: cover;
+        // flex-shrink: 0;
+      }
+    }
+  }
+}
