@@ -6,6 +6,11 @@
 .main-advertising .advertising-container .advertising-head-row {
   margin-bottom: 44px;
 }
+.main-advertising .advertising-container .advertising-head-row .advertising-head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .main-advertising .advertising-container .advertising-head-row .advertising-head h2 {
   color: #1b2221;
   font-family: Lora;
