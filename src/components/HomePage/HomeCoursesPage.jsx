@@ -7,8 +7,16 @@ import { CardData } from "../../data/Card";
 import "../../assets/styles/HomePage/HomeCoursesPage.scss";
 import AllCoursesBtn from "../Buttons/AllCoursesBtn";
 
-function HomeCoursesPage() {
+function HomeCoursesPage({ course }) {
   const [cardsType, setCardsType] = useState("all");
+  const [atHome, setAtHome] = useState(true);
+  useEffect(() => {
+    if (course === false) {
+      setAtHome(false);
+    } else {
+      setAtHome(true);
+    }
+  }, [atHome]);
 
   const [cardData, setCardData] = useState([]);
   useEffect(() => {
@@ -33,16 +41,16 @@ function HomeCoursesPage() {
           </div>
         </Col>
       </Row>
-      <Row  className="home-courselist-row">
+      <Row className="home-courselist-row">
         <Col md={12}>
           <div className="home-courses-cards-list">
-            <Card atHome cardData={cardData} cardsType={cardsType} />
+            <Card atHome={atHome} cardData={cardData} cardsType={cardsType} />
           </div>
         </Col>
       </Row>
-      <Row style={{margin:'auto'}}>
+      <Row style={{ margin: "auto" }}>
         <Col md={11} xs={12} className="home-allcourses">
-        <AllCoursesBtn/>
+          <AllCoursesBtn />
         </Col>
       </Row>
     </Container>
