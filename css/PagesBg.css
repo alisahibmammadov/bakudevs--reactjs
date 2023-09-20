@@ -17,30 +17,36 @@
 }
 .main-pages-bg section .pages-bg-container .pages-bg-head {
   display: flex;
-  justify-content: center;
+  flex-direction: initial;
   align-items: center;
+  justify-content: center;
+  gap: initial;
 }
 .main-pages-bg section .pages-bg-container .pages-bg-head h2 {
-  color: #fff;
-  text-align: center;
   font-family: Mulish;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 700;
   line-height: normal;
+  text-decoration: initial;
+  color: var(--light-color);
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
   z-index: 10 !important;
 }
 .main-pages-bg section .pages-bg-container .pages-bg-links {
   display: flex;
+  flex-direction: initial;
+  align-items: initial;
   justify-content: center;
+  gap: initial;
   padding: 20px 0;
 }
 .main-pages-bg section .pages-bg-container .pages-bg-links .pages-bg-home {
-  color: #fff;
   font-family: Mulish;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--light-color);
   font-size: 18px;
   font-weight: 500;
-  line-height: normal;
   text-decoration: none;
 }
 .main-pages-bg section .pages-bg-container .pages-bg-links .pages-bg-home:hover {

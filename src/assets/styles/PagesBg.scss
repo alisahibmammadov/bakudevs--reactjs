@@ -1,5 +1,41 @@
 // Mixin start
-@import '../../helpers/css/style.scss';
+@import "../../helpers/css/style.scss";
+@mixin flexbox(
+  $display,
+  $flex-direction,
+  $align-items,
+  $justify-content,
+  $gap
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+@mixin text-properties(
+  $font-family,
+  $line-height,
+  $text-decoration,
+  $color,
+  $font-size,
+  $font-weight
+) {
+  font-family: $font-family;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  color: var($color);
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin box-model($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+// @include flexbox(, -direction, -items, -content, )
+
 // Mixin end
 .main-pages-bg {
   background-image: url("../../assets/img/PagesBg.png");
@@ -16,30 +52,32 @@
       display: flex;
       flex-direction: column;
       .pages-bg-head {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, initial, center, center, initial);
         h2 {
-          color: #fff;
+          @include text-properties(
+            Mulish,
+            normal,
+            initial,
+            --light-color,
+            35px,
+            700
+          );
           text-align: center;
-          font-family: Mulish;
-          font-size: 35px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
           z-index: 10 !important;
         }
       }
       .pages-bg-links {
-        display: flex;
-        justify-content: center;
+        @include flexbox(flex, initial, initial, center, initial);
         padding: 20px 0;
         .pages-bg-home {
-          color: #fff;
-          font-family: Mulish;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: normal;
+          @include text-properties(
+            Mulish,
+            normal,
+            none,
+            --light-color,
+            18px,
+            500
+          );
           text-decoration: none;
           &:hover {
             color: var(--light-color-hover);
