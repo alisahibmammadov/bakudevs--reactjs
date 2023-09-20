@@ -1,72 +1,70 @@
 // Mixin Start
 @import "../../../helpers/css/style.scss";
 // Mixin End
-.bg-white{
+.bg-white {
   background: #ccc;
 }
-.section-navbar{
-
-  
+.section-navbar {
   .main-navbar {
     z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  @include flexbox(flex, row, center, space-between, initial);
-  padding: 28px 0;
-  border-color: transparent;
-  .navbar__menu-course {
-    @include flexbox(flex, row, center, initial, 15px);
-    i {
-      color: var(--dark-charcoal);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flexbox(flex, row, center, space-between, initial);
+    padding: 28px 0;
+    border-color: transparent;
+    .navbar__menu-course {
+      @include flexbox(flex, row, center, initial, 15px);
+      i {
+        color: var(--dark-charcoal);
+      }
+      .course-link {
+        @include text-properties(
+          Mulish,
+          normal,
+          none,
+          --dark-charcoal,
+          22px,
+          600
+        );
+      }
+      &:hover .course-link,
+      &:hover i,
+      &:hover {
+        cursor: pointer;
+        color: var(--dark-charcoal-hover);
+      }
     }
-    .course-link {
-      @include text-properties(
-        Mulish,
-        normal,
-        none,
-        --dark-charcoal,
-        22px,
-        600
-      );
+    .navbar__wishlist {
+      @include flexbox(flex, row, center, initial, 15px);
+      flex-shrink: 0;
+      i {
+        color: var(--teal);
+      }
+      .wishlist-link {
+        @include text-properties(Mulish, normal, none, --teal, 16px, 700);
+        text-align: center;
+      }
+      &:hover .wishlist-link,
+      &:hover i,
+      &:hover {
+        cursor: pointer;
+        color: var(--teal-hover);
+      }
     }
-    &:hover .course-link,
-    &:hover i,
-    &:hover {
-      cursor: pointer;
-      color: var(--dark-charcoal-hover);
+    .navbar__btn-boxes {
+      @include flexbox(flex, row, center, default, 11px);
     }
   }
-  .navbar__wishlist {
-    @include flexbox(flex, row, center, initial, 15px);
-    flex-shrink: 0;
-    i {
-      color: var(--teal);
-    }
-    .wishlist-link {
-      @include text-properties(Mulish, normal, none, --teal, 16px, 700);
-      text-align: center;
-    }
-    &:hover .wishlist-link,
-    &:hover i,
-    &:hover {
-      cursor: pointer;
-      color: var(--teal-hover);
-    }
-  }
-  .navbar__btn-boxes {
-    @include flexbox(flex, row, center, default, 11px);
-  }
-}
 
-.menu-icon-box {
-  display: none;
-  &:hover {
-    color: var(--dark-charcoal-hover);
-    cursor: pointer;
+  .menu-icon-box {
+    display: none;
+    &:hover {
+      color: var(--dark-charcoal-hover);
+      cursor: pointer;
+    }
   }
-}
 }
 // Media
 @media only screen and (max-width: 990px) {

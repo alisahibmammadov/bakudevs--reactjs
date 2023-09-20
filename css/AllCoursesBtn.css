@@ -18,6 +18,10 @@
   box-shadow: 0px 16px 40px 0px rgba(1, 94, 100, 0.15);
   text-decoration: none;
 }
+.all-courses-btn .link {
+  text-decoration: none;
+  color: var(--light-color);
+}
 .all-courses-btn:hover {
   background: var(--teal-hover);
   color: var(--light-color);

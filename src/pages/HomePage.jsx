@@ -5,7 +5,7 @@ import HomeAdvertisingPage from "../components/HomePage/HomeAdvertisingPage";
 
 function HomePage() {
   return (
-    <div >
+    <div  >
       <HomePageHead />
       <HomeCoursesPage />
       <HomeAdvertisingPage/>

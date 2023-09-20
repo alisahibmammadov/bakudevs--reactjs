@@ -50,7 +50,10 @@ function HomeCoursesPage({ course }) {
       </Row>
       <Row style={{ margin: "auto" }}>
         <Col md={11} xs={12} className="home-allcourses">
-          <AllCoursesBtn />
+          {
+            course === false ? null : <AllCoursesBtn />
+          }
+          {/* <AllCoursesBtn /> */}
         </Col>
       </Row>
     </Container>

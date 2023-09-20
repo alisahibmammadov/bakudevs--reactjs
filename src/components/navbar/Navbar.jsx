@@ -38,7 +38,7 @@ function Navbar({ menu, setMenu }) {
           <span className="bars-icon">
             <i className="fa-solid fa-bars-staggered"></i>
           </span>
-          <Link className="course-link" to="/">
+          <Link className="course-link" to="/courses">
             Kurslar
           </Link>
         </div>

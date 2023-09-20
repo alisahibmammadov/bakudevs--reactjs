@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/footer/Footer";
-import HomeCoursesPage from "./components/HomePage/HomeCoursesPage";
-// import Card from "./components/Cards/Card";
+import CoursesPage from "./pages/CoursesPage";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -16,21 +15,20 @@ function App() {
       setMenu(false);
     }
   });
-  const [course,setCourse]=useState(false)
 
   return (
-    <div className="App">
+    <div className="App" >
       <BrowserRouter>
-        <Navbar menu={menu} setMenu={setMenu} />
+      <Navbar menu={menu} setMenu={setMenu} />
         {menu === true ? (
           <NavbarMobileMenu menu={menu} setMenu={setMenu} />
-        ) : null}
+          ) : null}
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/courses" element={<CoursesPage />} />
         </Routes>
-        <Footer/>
-        <HomeCoursesPage course={course}/>
-      </BrowserRouter >
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

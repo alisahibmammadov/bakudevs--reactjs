@@ -7,6 +7,10 @@
   background: var(--teal);
   box-shadow: 0px 16px 40px 0px rgba(1, 94, 100, 0.15);
   text-decoration: none;
+  .link{
+    text-decoration: none;
+    color: var(--light-color);
+  }
   &:hover {
     background: var(--teal-hover);
     color: var(--light-color);

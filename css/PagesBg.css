@@ -1,0 +1,68 @@
+.main-pages-bg {
+  background-image: url("../../assets/img/PagesBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.main-pages-bg section {
+  padding: 26px 0;
+  background-color: #008d96;
+  width: 100%;
+  opacity: 0.7;
+}
+.main-pages-bg section .pages-bg-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-head h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 10 !important;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links .pages-bg-home {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links .pages-bg-home:hover {
+  color: var(--light-color-hover);
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links ul {
+  margin-bottom: 0;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links ul li {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links ul li:hover {
+  color: var(--light-color-hover);
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links ul li:hover .pages-bg-link {
+  color: var(--light-color-hover);
+}
+.main-pages-bg section .pages-bg-container .pages-bg-links ul li .pages-bg-link {
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=PagesBg.css.map */
