@@ -1,0 +1,88 @@
+.about-head-container {
+  padding: 80px 0;
+  display: flex;
+  gap: 100px;
+}
+.about-head-container .about-head-row {
+  display: flex;
+  padding: 20px 0;
+  margin: 0 !important;
+}
+.about-head-container .about-head-row .about-head-left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.about-head-container .about-head-row .about-head-left .about-head-left__border {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #008d96;
+  width: 457px;
+  height: 348px;
+  flex-shrink: 1;
+}
+.about-head-container .about-head-row .about-head-left .about-head-left__border img {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px;
+  top: -14px;
+  left: -14px;
+}
+.about-head-container .about-head-row .about-head-right {
+  background: red;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about-head-container .about-head-row .about-head-right h2 {
+  background-color: green;
+  color: #1b2221;
+  font-family: Lora;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 121.951% */
+}
+.about-head-container .about-head-row .about-head-right p {
+  background: blue;
+  color: #939393;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  width: 90%;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-head-left {
+    justify-content: center !important;
+  }
+  .about-head-right {
+    align-items: center !important;
+    padding: 0 10px !important;
+  }
+  .about-head-right h2 {
+    text-align: center !important;
+  }
+  .about-head-row {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .about-head-left__border {
+    width: 357px !important;
+    height: 248px !important;
+  }
+  .about-head-right {
+    padding: 0 10px !important;
+  }
+  .about-head-right h2 {
+    font-size: 31px !important;
+    text-align: center !important;
+  }
+  .about-head-right p {
+    font-size: 15px !important;
+  }
+}/*# sourceMappingURL=AboutPageHead.css.map */
