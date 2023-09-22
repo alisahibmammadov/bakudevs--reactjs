@@ -56,19 +56,10 @@
   margin-bottom: 0;
 }
 .main-pages-bg section .pages-bg-container .pages-bg-links ul li {
-  color: #fff;
   font-family: Mulish;
+  line-height: normal;
+  text-decoration: initial;
+  color: var(--light-color);
   font-size: 18px;
   font-weight: 500;
-  line-height: normal;
-}
-.main-pages-bg section .pages-bg-container .pages-bg-links ul li:hover {
-  color: var(--light-color-hover);
-}
-.main-pages-bg section .pages-bg-container .pages-bg-links ul li:hover .pages-bg-link {
-  color: var(--light-color-hover);
-}
-.main-pages-bg section .pages-bg-container .pages-bg-links ul li .pages-bg-link {
-  text-decoration: none;
-  color: #fff;
 }/*# sourceMappingURL=PagesBg.css.map */

@@ -7,7 +7,7 @@ function CoursesPage() {
   const [course, setCourse] = useState(false);
   return (
     <Container fluid style={{ padding: "100px 0 0" }}>
-      <PagesBg pages="Kurs" />
+      <PagesBg pages="courses" />
       <HomeCoursesPage course={course} />
     </Container>
   );

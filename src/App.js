@@ -6,6 +6,7 @@ import NavbarMobileMenu from "./components/navbar/NavbarMobileMenu";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/footer/Footer";
 import CoursesPage from "./pages/CoursesPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/about" element={<AboutPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
