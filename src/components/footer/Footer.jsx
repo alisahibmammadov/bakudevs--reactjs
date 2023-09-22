@@ -29,7 +29,7 @@ function Footer() {
               <Link to='/' className="router-link">
                 <li>Əsas səhifə</li>
               </Link>
-              <Link to='/courses' className="router-link" to='/courses'>
+              <Link to='/courses' className="router-link" >
                 <li>Kurslar</li>
               </Link>
               <Link to='/about' className="router-link">
