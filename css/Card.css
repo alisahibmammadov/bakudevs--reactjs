@@ -1,86 +1,70 @@
-.main-card {
-  width: 270px;
-  height: 347px;
-  border-radius: 20px;
+.contact-card {
+  border-radius: 30px;
+  border: 1px solid #f4d2b8;
+  background: #f9f5ee;
+  width: 271px;
+  height: 254px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: initial;
+  gap: 19px;
+  padding-top: 30px;
+}
+.contact-card .contact-headicon {
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
-  background: #fff;
-  box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.09);
-  padding: 17px;
-  margin: 10px 0;
-}
-.main-card .card-pos-lessonNum {
+  border-radius: 14px;
+  background: #f5af15;
+  box-shadow: 0px 3px 4px 0px rgba(82, 58, 4, 0.12);
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: initial;
-  border-bottom: 1px solid #d9d9d9;
-  width: 100%;
-  padding: 14.6px 0;
-}
-.main-card .card-pos-lessonNum .lesson-num {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: initial;
-  gap: 4px;
-  font-family: Mulish;
-  line-height: normal;
-  text-decoration: initial;
-  color: var(--list-color);
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-.main-card .card-pos-lessonNum > h3 {
-  width: 90px;
-  height: 31px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: initial;
-  font-family: Mulish;
-  line-height: normal;
-  text-decoration: initial;
-  color: var(--dark-charcoal);
-  font-size: 16px;
-  font-weight: 600;
-  flex-shrink: 0;
-  background: #fdefd0;
+}
+.contact-card .contact-headicon i {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.contact-card .contact-name {
+  color: #1b2221;
   text-align: center;
-}
-.main-card .card-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: initial;
-  gap: initial;
-  padding: 15px 0;
-}
-.main-card .card-info span {
   font-family: Mulish;
-  line-height: normal;
-  text-decoration: initial;
-  color: var(--dark-charcoal);
-  font-size: 18px;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 700;
-  width: 169px;
-  height: 60px;
-  border-radius: initial;
+  line-height: normal;
+}
+.contact-card .contact-method-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contact-card .contact-method-box .contact-method {
+  color: #939393;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+.contact-card .contact-card-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-card .contact-card-icons i {
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
-}
-.main-card .card-info > i {
-  font-size: 3.125rem;
-  color: var(--teal);
-}
-.main-card .card-info > i:hover {
-  cursor: pointer;
-  color: var(--teal-hover);
+  border-radius: 4px;
+  border: 1px solid #939393;
+  color: #939393;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=Card.css.map */

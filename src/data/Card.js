@@ -7,7 +7,7 @@ import Back3 from "../assets/img/Cards/Back3.png";
 import Back4 from "../assets/img/Cards/Back4.png";
 import Back5 from "../assets/img/Cards/Back5.png";
 import Back6 from "../assets/img/Cards/Back6.png";
-import Uiux1 from "../assets/img/Cards/Uiux1.png";
+import Uiux1 from "../assets/img/Cards/Uiux1.png"; 
 import Uiux2 from "../assets/img/Cards/Uiux2.png";
 import Uiux3 from "../assets/img/Cards/Uiux3.png";
 export const CardData = [
