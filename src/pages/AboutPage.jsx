@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import HomeAdvertisingPage from "../components/HomePage/HomeAdvertisingPage";
 import PagesBg from "../components/PagesBg";
 import AboutPageHead from "../components/AboutPage/AboutPageHead";

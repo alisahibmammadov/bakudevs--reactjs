@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import Footer from "./components/footer/Footer";
 import CoursesPage from "./pages/CoursesPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
