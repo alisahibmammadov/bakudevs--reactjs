@@ -1,0 +1,19 @@
+.commonBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  background: #008d96;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  padding: 11px 50.7px;
+}
+.commonBtn:hover {
+  background: var(--teal-hover);
+  color: #fff;
+}/*# sourceMappingURL=CommonBtn.css.map */
