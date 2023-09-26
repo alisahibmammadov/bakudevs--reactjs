@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../assets/styles/ContactPage/CardList.scss'
-import { Container,Row,Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Card from './card/Card'
 
 function CardList() {
