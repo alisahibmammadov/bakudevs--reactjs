@@ -5,7 +5,7 @@ import Card from './card/Card'
 
 function CardList() {
   return (
-    <div style={{display:"flex",gap:'100px'}}><Card/></div>
+    <Container className='cardList-container'><Card/></Container>
   )
 }
 

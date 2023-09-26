@@ -1,3 +1,5 @@
+
+
 .contact-card {
   border-radius: 30px;
   border: 1px solid #f4d2b8;
@@ -11,7 +13,9 @@
   justify-content: flex-start;
   gap: 19px;
   padding-top: 30px;
-
+  &:nth-child(4) {
+    gap: 12px;
+  }
   .contact-headicon {
     width: 60px;
     height: 60px;
@@ -67,6 +71,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      &:hover{
+        background: #939393bc;
+        color: #616161;
+      }
     }
   }
 }

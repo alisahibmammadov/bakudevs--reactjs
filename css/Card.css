@@ -12,6 +12,9 @@
   gap: 19px;
   padding-top: 30px;
 }
+.contact-card:nth-child(4) {
+  gap: 12px;
+}
 .contact-card .contact-headicon {
   width: 60px;
   height: 60px;
@@ -67,4 +70,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.contact-card .contact-card-icons i:hover {
+  background: rgba(147, 147, 147, 0.737254902);
+  color: #616161;
 }/*# sourceMappingURL=Card.css.map */
