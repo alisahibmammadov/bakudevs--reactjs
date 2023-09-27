@@ -3,31 +3,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #e3f1f2;
   gap: 45px;
+  background: #e3f1f2;
   padding: 53px 0;
 }
 .contact-form-page-container .formPage-head {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: initial;
+  gap: initial;
 }
 .contact-form-page-container .formPage-head h3 {
-  color: #1b2221;
   font-family: Mulish;
+  line-height: 57px;
+  text-decoration: initial;
+  color: var(--dark-charcoal);
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 57px; /* 158.333% */
 }
 .contact-form-page-container .formPage-head p {
-  color: #939393;
-  text-align: center;
   font-family: Mulish;
+  line-height: 32px;
+  text-decoration: initial;
+  color: var(--list-color);
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 177.778% */
+  text-align: center;
 }
 .contact-form-page-container .form-boxes-row {
   display: flex;
@@ -36,22 +38,23 @@
 .contact-form-page-container .form-input-box {
   display: flex;
   flex-direction: column;
+  align-items: initial;
   justify-content: space-between;
+  gap: initial;
   height: 97%;
 }
 .contact-form-page-container .form-input-box input {
   width: 360px;
   height: 60px;
-  flex-shrink: 0;
   border-radius: 10px;
+  font-family: Mulish;
+  line-height: 20px;
+  text-decoration: initial;
+  color: var(--list-color);
+  font-size: 16px;
+  font-weight: 400;
   border: 1px solid #dfdbdb;
   background: #f6f6f7;
-  color: #939393;
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 125% */
   padding-left: 20px;
   outline: none;
 }
@@ -61,21 +64,21 @@
   height: 100%;
 }
 .contact-form-page-container .form-textarea-box textarea {
+  font-family: Mulish;
+  line-height: 20px;
+  text-decoration: initial;
+  color: var(--list-color);
+  font-size: 16px;
+  font-weight: 400;
   width: 360px;
   height: 210px;
+  border-radius: 10px;
   flex-shrink: 0;
   resize: none;
-  border-radius: 10px;
   border: 1px solid #dfdbdb;
   background: #f6f6f7;
   outline: none;
   padding: 20px;
-  color: #939393;
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 125% */
 }
 
 @media only screen and (max-width: 768px) {
@@ -83,7 +86,8 @@
     justify-content: center !important;
     gap: 10px !important;
   }
-  .form-input-box, .form-textarea-box {
+  .form-input-box,
+  .form-textarea-box {
     align-items: center !important;
     gap: 10px !important;
   }

@@ -1,109 +1,79 @@
-// *{
-//     outline: 1px solid red;
-// }
+@import "../../../helpers/css/style.scss";
 .contact-form-page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flexbox(flex, column, center, center, 45px);
   background: #e3f1f2;
-  gap: 45px;
   padding: 53px 0;
   .formPage-head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(flex, column, center, initial, initial);
     h3 {
-      color: #1b2221;
-      font-family: Mulish;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 57px; /* 158.333% */
+      @include text-properties(
+        Mulish,
+        57px,
+        initial,
+        --dark-charcoal,
+        36px,
+        700
+      );
     }
     p {
-      color: #939393;
+      @include text-properties(Mulish, 32px, initial, --list-color, 18px, 400);
       text-align: center;
-      font-family: Mulish;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px; /* 177.778% */
     }
   }
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    .form-boxes-row{
-        display: flex;
-        justify-content: space-between;
+
+  .form-boxes-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-input-box {
+    @include flexbox(flex, column, initial, space-between, initial);
+    height: 97%;
+    input {
+      @include box-model(360px, 60px, 10px);
+      @include text-properties(Mulish, 20px, initial, --list-color, 16px, 400);
+      border: 1px solid #dfdbdb;
+      background: #f6f6f7;
+      padding-left: 20px;
+      outline: none;
     }
-    .form-input-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 97%;
-      input {
-        width: 360px;
-        height: 60px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        border: 1px solid #dfdbdb;
-        background: #f6f6f7;
-        color: #939393;
-        font-family: Mulish;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px; /* 125% */
-        padding-left: 20px;
-        outline: none;
-      }
+  }
+  .form-textarea-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    textarea {
+      @include text-properties(Mulish, 20px, initial, --list-color, 16px, 400);
+      @include box-model(360px, 210px, 10px);
+      flex-shrink: 0;
+      resize: none;
+      border: 1px solid #dfdbdb;
+      background: #f6f6f7;
+      outline: none;
+      padding: 20px;
     }
-    .form-textarea-box {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-      textarea {
-        width: 360px;
-        height: 210px;
-        flex-shrink: 0;
-        resize: none;
-        border-radius: 10px;
-        border: 1px solid #dfdbdb;
-        background: #f6f6f7;
-        outline: none;
-        padding: 20px;
-        color: #939393;
-        font-family: Mulish;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px; /* 125% */
-      }
-    }
+  }
 }
 
-@media only screen and (max-width:768px){
-    .form-boxes-row{
-        justify-content: center !important;
-        gap: 10px !important;
-    }
-    .form-input-box, .form-textarea-box{
-        align-items: center !important;
-        gap: 10px !important;
-    }
+@media only screen and (max-width: 768px) {
+  .form-boxes-row {
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+  .form-input-box,
+  .form-textarea-box {
+    align-items: center !important;
+    gap: 10px !important;
+  }
 }
-@media only screen and (max-width:375px){
-    
-    .form-input-box{
-        input{
-            width: 300px !important;
-        }
+@media only screen and (max-width: 375px) {
+  .form-input-box {
+    input {
+      width: 300px !important;
     }
-    .form-textarea-box{
-        textarea{
-            width: 300px !important;
-        }
+  }
+  .form-textarea-box {
+    textarea {
+      width: 300px !important;
     }
+  }
 }

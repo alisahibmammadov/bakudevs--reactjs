@@ -1,78 +1,56 @@
-
-
+@import "../../../../helpers/css/style.scss";
 .contact-card {
-  border-radius: 30px;
+  @include flexbox(flex, column, center, flex-start, 19px);
+  @include box-model(271px, 254px, 30px);
   border: 1px solid #f4d2b8;
   background: #f9f5ee;
-  width: 271px;
-  height: 254px;
   flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 19px;
   padding-top: 30px;
   &:nth-child(4) {
     gap: 12px;
   }
   .contact-headicon {
-    width: 60px;
-    height: 60px;
+    @include box-model(60px, 60px, 14px);
+    @include flexbox(flex, row, center, center, initial);
     flex-shrink: 0;
-    border-radius: 14px;
     background: #f5af15;
     box-shadow: 0px 3px 4px 0px rgba(82, 58, 4, 0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     i {
       color: #fff;
       font-size: 1.3rem;
     }
   }
   .contact-name {
-    color: #1b2221;
+    @include text-properties(Mulish, normal, initial, --teal, 20px, 700);
     text-align: center;
-    font-family: Mulish;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
   }
   .contact-method-box {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    @include flexbox(flex, column, initial, initial, 4px);
     .contact-method {
-      color: #939393;
+      @include text-properties(
+        Mulish,
+        normal,
+        initial,
+        --list-color,
+        16px,
+        500
+      );
       text-align: center;
-      font-family: Mulish;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
       padding: 0;
       margin: 0;
     }
   }
 
   .contact-card-icons {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    @include flexbox(flex, row, center, initial, 16px);
     i {
-      width: 36px;
-      height: 36px;
+      @include box-model(36px, 36px, 4px);
+      @include flexbox(flex, row, center, center, initial);
       flex-shrink: 0;
-      border-radius: 4px;
       border: 1px solid #939393;
       color: #939393;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background: #939393bc;
         color: #616161;
       }
