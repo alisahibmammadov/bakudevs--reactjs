@@ -1,0 +1,26 @@
+.gfb-main .f-row {
+  position: relative;
+  background: red;
+}
+.gfb-main .f-row i {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.gfb-main .g-row {
+  background: green;
+  position: relative;
+}
+.gfb-main .g-row i {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=GFB.css.map */

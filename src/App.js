@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import CoursesPage from "./pages/CoursesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import SignIn from "./pages/SignIn";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
+          <Route path="/signin" element={<SignIn/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
