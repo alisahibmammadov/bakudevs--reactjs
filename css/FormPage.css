@@ -1,0 +1,98 @@
+.contact-form-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e3f1f2;
+  gap: 45px;
+  padding: 53px 0;
+}
+.contact-form-page-container .formPage-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-page-container .formPage-head h3 {
+  color: #1b2221;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px; /* 158.333% */
+}
+.contact-form-page-container .formPage-head p {
+  color: #939393;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+.contact-form-page-container .form-boxes-row {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form-page-container .form-input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 97%;
+}
+.contact-form-page-container .form-input-box input {
+  width: 360px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #dfdbdb;
+  background: #f6f6f7;
+  color: #939393;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  padding-left: 20px;
+  outline: none;
+}
+.contact-form-page-container .form-textarea-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.contact-form-page-container .form-textarea-box textarea {
+  width: 360px;
+  height: 210px;
+  flex-shrink: 0;
+  resize: none;
+  border-radius: 10px;
+  border: 1px solid #dfdbdb;
+  background: #f6f6f7;
+  outline: none;
+  padding: 20px;
+  color: #939393;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+@media only screen and (max-width: 768px) {
+  .form-boxes-row {
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+  .form-input-box, .form-textarea-box {
+    align-items: center !important;
+    gap: 10px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .form-input-box input {
+    width: 300px !important;
+  }
+  .form-textarea-box textarea {
+    width: 300px !important;
+  }
+}/*# sourceMappingURL=FormPage.css.map */
