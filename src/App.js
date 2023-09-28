@@ -33,7 +33,7 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/signin" element={<SignIn/>}/>
-          <Route path='/salam' element={<Sign/>}/>
+          <Route path='/salam' element={<Sign signTye=''/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
