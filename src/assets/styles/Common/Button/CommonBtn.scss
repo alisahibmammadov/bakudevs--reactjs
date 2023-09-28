@@ -17,3 +17,26 @@
     color: #fff;
   }
 }
+@media only screen and (max-width:768px){
+  .commonBtn{
+    padding: 10px 40px !important;
+  }
+}
+@media only screen and (max-width:380px){
+  .commonBtn{
+    padding: 10px 35px !important;
+    font-size: 15px !important;
+    > i{
+      font-size: 10px !important;
+    }
+  }
+}
+@media only screen and (max-width:325px){
+  .commonBtn{
+    padding: 10px 20px !important;
+    font-size: 11px !important;
+    > i{
+      font-size: 8px !important;
+    }
+  }
+}

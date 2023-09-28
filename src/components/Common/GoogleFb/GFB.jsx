@@ -4,11 +4,13 @@ function GFB() {
   return (
     <form className='gfb-main'>
         <div className='f-row'>
-            <input type="text" placeholder='Facebook ilə daxil ol' />
+            <nav>
+              <span>Facebook ilə daxil ol</span>
+            </nav>
             <i class="fa-brands fa-facebook-f"></i>
         </div>
         <div className='g-row'>
-            <input type="text" placeholder='Google ilə qeydiyyatdan keç'/>
+            <nav><span>Google ilə qeydiyyatdan keç</span></nav>
             <i class="fa-brands fa-google-plus-g"></i>
         </div>
     </form>
