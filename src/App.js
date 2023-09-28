@@ -9,6 +9,7 @@ import CoursesPage from "./pages/CoursesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import SignIn from "./pages/SignIn";
+import Sign from "./pages/Sign";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/signin" element={<SignIn/>}/>
+          <Route path='/salam' element={<Sign/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
