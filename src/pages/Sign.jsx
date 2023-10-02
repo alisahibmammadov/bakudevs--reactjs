@@ -1,36 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 import GFB from "../components/Common/GoogleFb/GFB";
 import "../assets/styles/Sign/Sign.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CommonBtn from "../components/Common/Button/CommonBtn";
-import { currentUser, userData } from "../App";
 
 function Sign({ signType }) {
-  const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [nameSurName, setNameSurName] = useState("");
-  const [rePassword, setRepassword] = useState("");
-
-  const getUser = (work) => {
-    if (work === "in") {
-      const user = userData.find(
-        (user) => user.email === email && user.password === password
-      );
-      currentUser.push(user);
-      console.log(currentUser);
-      if (user) {
-        navigate("/");
-        localStorage.setItem("user", JSON.stringify(user));
-      }
-    } else if (work === "up") {
-      userData.push({nameSurName,email,password})
-      console.log(userData);
-      localStorage.setItem('user',JSON.stringify(userData))
-    }
-  };
-
   return (
     <Container className="signpage-container">
       {signType === "in" ? <h2>Daxil olun</h2> : <h2>Qeydiyyatdan keçin</h2>}
@@ -45,8 +20,6 @@ function Sign({ signType }) {
                 type="text"
                 placeholder="Adınız və Soyadınız"
                 id="nameSurname"
-                value={nameSurName}
-              onChange={(e) => setNameSurName(e.target.value)}
               />
             </nav>
           </div>
@@ -55,26 +28,14 @@ function Sign({ signType }) {
           <label htmlFor="email">Email</label>
           <nav className="input">
             <i className="fa-regular fa-envelope"></i>
-            <input
-              type="email"
-              placeholder="Email ünvanı"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+            <input type="email" placeholder="Email ünvanı" id="email" />
           </nav>
         </div>
         <div className="label-input">
           <label htmlFor="password">Şifrə</label>
           <nav className="input">
             <i className="fa-solid fa-lock"></i>
-            <input
-              type="password"
-              placeholder="Şifrə"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <input type="password" placeholder="Şifrə" id="password" />
           </nav>
         </div>
         {signType === "up" ? (
@@ -82,8 +43,7 @@ function Sign({ signType }) {
             <label htmlFor="repassword">Şifrənin təkrarı</label>
             <nav className="input">
               <i className="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Şifrə" id="repassword" value={rePassword}
-              onChange={(e) => setRepassword(e.target.value)}/>
+              <input type="password" placeholder="Şifrə" id="repassword" />
             </nav>
           </div>
         ) : null}
@@ -101,16 +61,9 @@ function Sign({ signType }) {
         </div>
         {/* <CommonBtn work="entry" /> */}
         {signType === "in" ? (
-          <CommonBtn
-            work="entry"
-            onBtnClick={() => {
-              getUser("in");
-            }}
-          />
+          <CommonBtn work="entry" />
         ) : signType === "up" ? (
-          <CommonBtn work="up" onBtnClick={() => {
-            getUser("up");
-          }}/>
+          <CommonBtn work="up" />
         ) : null}
 
         {signType === "in" ? (

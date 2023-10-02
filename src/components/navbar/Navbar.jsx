@@ -7,20 +7,9 @@ import LoginBtn from "../Buttons/LoginBtn";
 
 function Navbar({ menu, setMenu }) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isLocalStorageEmpty, setIsLocalStorageEmpty] = useState(true);
-  const [user, setUser] = useState();
-  const getUser = () => {
-    const user = localStorage.getItem("user");
-    const name = JSON.parse(user).name;
-    setUser(name);
-  };
 
   const handleClick = () => {
     setMenu(!menu);
-  };
-  const handleLogout = () => {
-    localStorage.removeItem("user");
-    setIsLocalStorageEmpty(true);
   };
 
   function handleScroll() {
@@ -32,20 +21,7 @@ function Navbar({ menu, setMenu }) {
   }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    const localStorageEmpty = Object.keys(localStorage).length === 0;
-    setIsLocalStorageEmpty(localStorageEmpty);
 
-    window.addEventListener("storage", () => {
-      const localStorageEmpty = Object.keys(localStorage).length === 0;
-      setIsLocalStorageEmpty(localStorageEmpty);
-    });
-
-    // localStorage'da user bilgisi varsa, oturum açmış demektir.
-    const user = localStorage.getItem("user");
-    if (user) {
-      setIsLocalStorageEmpty(false);
-      getUser();
-    }
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -76,13 +52,10 @@ function Navbar({ menu, setMenu }) {
           </Link>
         </div>
 
-        {isLocalStorageEmpty && (
-          <div className="navbar__btn-boxes">
-            <LoginBtn />
-            <SignupBtn />
-          </div>
-        )}
-        {!isLocalStorageEmpty && <Link className="private-cabinet-link" to="/privateCabinet">{user}</Link>}
+        <div className="navbar__btn-boxes">
+          <LoginBtn />
+          <SignupBtn />
+        </div>
 
         <div className="menu-icon-box" onClick={handleClick}>
           <i className="fa-solid fa-bars-staggered"></i>
