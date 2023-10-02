@@ -16,7 +16,7 @@ function Sign({ signType }) {
           <div className="label-input">
             <label htmlFor="nameSurname">Adınız və Soyadınız</label>
             <nav className="input">
-              <i className="fa-regular fa-envelope"></i>
+            <i class="fa-solid fa-user"></i>
               <input
                 type="text"
                 placeholder="Adınız və Soyadınız"
