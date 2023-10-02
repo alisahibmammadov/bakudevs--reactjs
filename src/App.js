@@ -32,8 +32,9 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
-          <Route path="/signin" element={<SignIn/>}/>
-          <Route path='/salam' element={<Sign signTye=''/>}/>
+          <Route path="/sign" element={<SignIn/>}/>
+          <Route path='/signin' element={<Sign signType='in'/>}/>
+          <Route path='/signup' element={<Sign signType='up'/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

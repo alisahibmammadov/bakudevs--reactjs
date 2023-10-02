@@ -5,12 +5,21 @@ import "../assets/styles/Sign/Sign.scss";
 import { Link } from "react-router-dom";
 import CommonBtn from "../components/Common/Button/CommonBtn";
 
-function Sign() {
+function Sign({ signType }) {
   return (
     <Container className="signpage-container">
       <h2>Daxil olun</h2>
       <form className="sign-form">
         <GFB />
+        {
+          signType === 'up' ? <div className="label-input">
+          <label htmlFor="nameSurname">Adınız və Soyadınız</label>
+          <nav className="input">
+            <i className="fa-regular fa-envelope"></i>
+            <input type="text" placeholder="Adınız və Soyadınız" id="nameSurname" />
+          </nav>
+        </div> : null
+        }
         <div className="label-input">
           <label htmlFor="email">Email</label>
           <nav className="input">
@@ -25,14 +34,23 @@ function Sign() {
             <input type="password" placeholder="Şifrə" id="password" />
           </nav>
         </div>
+        <div className="label-input">
+          <label htmlFor="repassword">Şifrənin təkrarı</label>
+          <nav className="input">
+            <i className="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Şifrə" id="repassword" />
+          </nav>
+        </div>
         <div className="checkbox-save">
           <nav>
             <input type="checkbox" id="save" />
             <label htmlFor="save">Yadda saxla</label>
           </nav>
-          <Link to="/forget" className="forget-link">
+          {
+            signType === 'in' ?<Link to="/forget" className="forget-link">
             Şifrənizi unutmusunuz?
-          </Link>
+          </Link> : null
+          }
         </div>
         <CommonBtn work="entry" />
         <div className="signup-link">
