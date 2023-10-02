@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import Sign from "./pages/Sign";
 import PasswordUpdate from "./pages/PasswordUpdate";
 import Page404 from "./pages/Page404";
+import PrivateCabinet from "./pages/PrivateCabinet";
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
             element={<PasswordUpdate updateType="accept" />}
           />
           <Route path="/notFound" element={<Page404 />} />
+          <Route path="/privateCabinet" element={<PrivateCabinet/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

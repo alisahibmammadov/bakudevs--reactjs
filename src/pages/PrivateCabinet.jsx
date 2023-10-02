@@ -5,8 +5,13 @@ import '../assets/styles/PrivateCabinet/PrivateCabinet.scss'
 
 function PrivateCabinet() {
   return (
-    <Container>
-        
+    <Container className='private-cabinet-container'>
+        <Row>
+          <Col lg={4}>
+            <div className=''></div>
+          </Col>
+          <Col lg={8}></Col>
+        </Row>
     </Container>
   )
 }
