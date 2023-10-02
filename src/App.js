@@ -8,7 +8,6 @@ import Footer from "./components/footer/Footer";
 import CoursesPage from "./pages/CoursesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import SignIn from "./pages/SignIn";
 import Sign from "./pages/Sign";
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
-          <Route path="/sign" element={<SignIn/>}/>
           <Route path='/signin' element={<Sign signType='in'/>}/>
           <Route path='/signup' element={<Sign signType='up'/>}/>
         </Routes>

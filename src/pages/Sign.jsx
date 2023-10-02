@@ -11,15 +11,19 @@ function Sign({ signType }) {
       <h2>Daxil olun</h2>
       <form className="sign-form">
         <GFB />
-        {
-          signType === 'up' ? <div className="label-input">
-          <label htmlFor="nameSurname">Adınız və Soyadınız</label>
-          <nav className="input">
-            <i className="fa-regular fa-envelope"></i>
-            <input type="text" placeholder="Adınız və Soyadınız" id="nameSurname" />
-          </nav>
-        </div> : null
-        }
+        {signType === "up" ? (
+          <div className="label-input">
+            <label htmlFor="nameSurname">Adınız və Soyadınız</label>
+            <nav className="input">
+              <i className="fa-regular fa-envelope"></i>
+              <input
+                type="text"
+                placeholder="Adınız və Soyadınız"
+                id="nameSurname"
+              />
+            </nav>
+          </div>
+        ) : null}
         <div className="label-input">
           <label htmlFor="email">Email</label>
           <nav className="input">
@@ -46,19 +50,29 @@ function Sign({ signType }) {
             <input type="checkbox" id="save" />
             <label htmlFor="save">Yadda saxla</label>
           </nav>
-          {
-            signType === 'in' ?<Link to="/forget" className="forget-link">
-            Şifrənizi unutmusunuz?
-          </Link> : null
-          }
+          {signType === "in" ? (
+            <Link to="/forget" className="forget-link">
+              Şifrənizi unutmusunuz?
+            </Link>
+          ) : null}
         </div>
         <CommonBtn work="entry" />
-        <div className="signup-link">
-          <label htmlFor="">Hesabınız yoxdur?</label>
-          <Link to="/signup" className="signup">
-            Qeydiyyatdan keçin
-          </Link>
-        </div>
+
+        {signType === "in" ? (
+          <div className="signup-link">
+            <label htmlFor="">Hesabınız yoxdur?</label>
+            <Link to="/signup" className="signup">
+              Qeydiyyatdan keçin
+            </Link>
+          </div>
+        ) : (
+          <div className="signup-link">
+            <label htmlFor="">Hesabınız var?</label>
+            <Link to="/signin" className="signup">
+              Daxil olun
+            </Link>
+          </div>
+        )}
       </form>
     </Container>
   );
