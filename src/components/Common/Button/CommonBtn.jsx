@@ -8,7 +8,7 @@ function CommonBtn({ work,onBtnClick  }) {
     <Button className="commonBtn" variant="link" onClick={onBtnClick}>
       <Link
         className="commonbtnLink"
-        to={work === "passwordUpdate" ? "/passwordUpdateAccept" : work === 'entry1' ? '/' : null}
+        to={work === "passwordUpdate" ? "/passwordUpdateAccept" :null}
       >
         {work === "send"
           ? "Göndər"

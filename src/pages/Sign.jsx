@@ -5,7 +5,6 @@ import "../assets/styles/Sign/Sign.scss";
 import { Link, useNavigate } from "react-router-dom";
 import CommonBtn from "../components/Common/Button/CommonBtn";
 import { userData } from "../App";
-// import SignupBtn from "../components/Buttons/SignupBtn";
 
 function Sign({ signType }) {
   const navigate = useNavigate();
@@ -19,6 +18,9 @@ function Sign({ signType }) {
         (user) => user.email === email && user.password === password
       );
       console.log(user);
+      if (user) {
+        navigate("/");
+      }
     }
   };
 
@@ -93,7 +95,6 @@ function Sign({ signType }) {
             work="entry"
             onBtnClick={() => {
               getUser("in");
-              navigate("/");
             }}
           />
         ) : signType === "up" ? (
