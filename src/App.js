@@ -10,6 +10,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import Sign from "./pages/Sign";
 import PasswordUpdate from "./pages/PasswordUpdate";
+import Page404 from "./pages/Page404";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -36,6 +37,7 @@ function App() {
           <Route path='/signup' element={<Sign signType='up'/>}/>
           <Route path='/passwordUpdateSend' element={<PasswordUpdate   updateType='send'/>}/>
           <Route path='/passwordUpdateAccept' element={<PasswordUpdate updateType='accept'/>}/>
+          <Route path="/notFound" element={<Page404/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -16,7 +16,7 @@ function Sign({ signType }) {
           <div className="label-input">
             <label htmlFor="nameSurname">Adınız və Soyadınız</label>
             <nav className="input">
-            <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user"></i>
               <input
                 type="text"
                 placeholder="Adınız və Soyadınız"
@@ -39,13 +39,16 @@ function Sign({ signType }) {
             <input type="password" placeholder="Şifrə" id="password" />
           </nav>
         </div>
-        <div className="label-input">
-          <label htmlFor="repassword">Şifrənin təkrarı</label>
-          <nav className="input">
-            <i className="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Şifrə" id="repassword" />
-          </nav>
-        </div>
+        {signType === "up" ? (
+          <div className="label-input">
+            <label htmlFor="repassword">Şifrənin təkrarı</label>
+            <nav className="input">
+              <i className="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Şifrə" id="repassword" />
+            </nav>
+          </div>
+        ) : null}
+
         <div className="checkbox-save">
           <nav>
             <input type="checkbox" id="save" />
