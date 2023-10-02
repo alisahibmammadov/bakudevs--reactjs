@@ -4,7 +4,6 @@ import "../assets/styles/404/Page404.scss";
 import NotFound from "../assets/img/404.png";
 import { Link } from "react-router-dom";
 
-
 function Page404() {
   return (
     <Container className="notFound-container">
@@ -12,7 +11,9 @@ function Page404() {
       <div className="notFund-img-btn">
         <img src={NotFound} alt="NotFound" />
         <Button className="backHome">
-          <Link style={{textDecoration:'none',color:'#008d96'}} to='/'><i className="fa-solid fa-chevron-left"></i> Əsas səhifəyə qayıt</Link>
+          <Link style={{ textDecoration: "none", color: "#008d96" }} to="/">
+            <i className="fa-solid fa-chevron-left"></i> Əsas səhifəyə qayıt
+          </Link>
         </Button>
       </div>
     </Container>

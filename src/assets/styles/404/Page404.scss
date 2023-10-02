@@ -20,6 +20,9 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    > img {
+      width: 90%;
+    }
     .backHome {
       color: #008d96;
       font-family: Mulish;
@@ -38,6 +41,21 @@
         background: var(--light-color-hover);
         color: var(--light-color);
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .notFund-img-btn {
+    > img {
+      flex-shrink: 2;
+    }
+  }
+}
+@media only screen and (max-width: 430px) {
+  .notFound-container {
+    > h2 {
+      font-size: 31px;
     }
   }
 }
