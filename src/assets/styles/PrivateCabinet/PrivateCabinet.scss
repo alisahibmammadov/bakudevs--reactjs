@@ -28,31 +28,48 @@
         line-height: normal;
       }
     }
-    .btn-boxes{
+    .btn-boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-grow: 1;
+      height: 81%;
+      border-radius: 20px;
+
+      button {
+        background: transparent;
+        border-radius: 0;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        flex-grow: 1;
-        height: 81%;
-        border-radius: 20px;
-        Button{
-            background: transparent;
-            border-color: transparent transparent transparent green;
-            border-radius: 0;
-            border-width: 5px;
-            color: #008D96;
-font-family: Mulish;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-width: 100%;
+        justify-content: left;
+        height: 40px;
+        width: 100%;
+        padding-left: 50px;
+        position: relative;
+        border: transparent;
+        span {
+          position: absolute;
+          height: 100%;
+          width: 5px;
+          top: 0;
+          left: 0;
+          background: #008d96;
         }
+        p {
+          display: flex;
+          gap: 10px;
+          color: #008d96;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          padding: 0;
+          margin: 0;
+        }
+      }
     }
   }
 }
