@@ -8,7 +8,7 @@ import CommonBtn from "../components/Common/Button/CommonBtn";
 function Sign({ signType }) {
   return (
     <Container className="signpage-container">
-      <h2>Daxil olun</h2>
+      {signType === "in" ? <h2>Daxil olun</h2> : <h2>Qeydiyyatdan keçin</h2>}
       <form className="sign-form">
         <GFB />
         {signType === "up" ? (
