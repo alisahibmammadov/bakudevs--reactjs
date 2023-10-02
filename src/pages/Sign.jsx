@@ -4,6 +4,7 @@ import GFB from "../components/Common/GoogleFb/GFB";
 import "../assets/styles/Sign/Sign.scss";
 import { Link } from "react-router-dom";
 import CommonBtn from "../components/Common/Button/CommonBtn";
+import SignupBtn from "../components/Buttons/SignupBtn";
 
 function Sign({ signType }) {
   return (
@@ -51,12 +52,17 @@ function Sign({ signType }) {
             <label htmlFor="save">Yadda saxla</label>
           </nav>
           {signType === "in" ? (
-            <Link to="/forget" className="forget-link">
+            <Link to="/passwordUpdateSend" className="forget-link">
               Şifrənizi unutmusunuz?
             </Link>
           ) : null}
         </div>
-        <CommonBtn work="entry" />
+        {/* <CommonBtn work="entry" /> */}
+        {signType === "in" ? (
+          <CommonBtn work="entry" />
+        ) : signType === "up" ? (
+          <CommonBtn work="up" />
+        ) : null}
 
         {signType === "in" ? (
           <div className="signup-link">

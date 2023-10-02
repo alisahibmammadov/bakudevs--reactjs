@@ -12,6 +12,10 @@
   line-height: normal;
   text-decoration: none;
   padding: 11px 50.7px;
+  .commonbtnLink{
+    text-decoration: none;
+    color:#fff;
+  }
   &:hover {
     background: var(--teal-hover);
     color: #fff;
