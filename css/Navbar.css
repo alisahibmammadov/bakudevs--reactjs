@@ -108,4 +108,14 @@
   .navbar__wishlist {
     display: none !important;
   }
+}
+.private-cabinet-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 40px;
+  display: inline-block;
+  border: 1px solid var(--teal);
+  border-radius: 50%;
+  padding: 8px 0;
 }/*# sourceMappingURL=Navbar.css.map */

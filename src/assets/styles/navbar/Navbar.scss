@@ -102,3 +102,14 @@
     display: none !important;
   }
 }
+.private-cabinet-link{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 40px; 
+  display: inline-block;
+  border: 1px solid var(--teal);
+  border-radius: 50%;
+  // height: 40px;
+  padding: 8px 0;
+}

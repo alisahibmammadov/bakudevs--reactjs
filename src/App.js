@@ -28,9 +28,11 @@ export const userData = [
     password: "qurban123",
   },
 ];
+export const currentUser = []
 
 function App() {
   const [menu, setMenu] = useState(false);
+  console.log(currentUser);
 
   window.addEventListener("resize", () => {
     if (window.innerWidth > 768) {

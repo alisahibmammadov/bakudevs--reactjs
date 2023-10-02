@@ -1,26 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import GFB from "../components/Common/GoogleFb/GFB";
 import "../assets/styles/Sign/Sign.scss";
 import { Link, useNavigate } from "react-router-dom";
 import CommonBtn from "../components/Common/Button/CommonBtn";
-import { userData } from "../App";
+import { currentUser, userData } from "../App";
 
 function Sign({ signType }) {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  console.log(email);
   const [password, setPassword] = useState("");
-  console.log(password);
+  const [nameSurName, setNameSurName] = useState("");
+  const [rePassword, setRepassword] = useState("");
+
   const getUser = (work) => {
     if (work === "in") {
       const user = userData.find(
         (user) => user.email === email && user.password === password
       );
-      console.log(user);
+      currentUser.push(user);
+      console.log(currentUser);
       if (user) {
         navigate("/");
+        localStorage.setItem("user", JSON.stringify(user));
       }
+    } else if (work === "up") {
+      userData.push({nameSurName,email,password})
+      console.log(userData);
+      localStorage.setItem('user',JSON.stringify(userData))
     }
   };
 
@@ -38,6 +45,8 @@ function Sign({ signType }) {
                 type="text"
                 placeholder="Adınız və Soyadınız"
                 id="nameSurname"
+                value={nameSurName}
+              onChange={(e) => setNameSurName(e.target.value)}
               />
             </nav>
           </div>
@@ -73,7 +82,8 @@ function Sign({ signType }) {
             <label htmlFor="repassword">Şifrənin təkrarı</label>
             <nav className="input">
               <i className="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Şifrə" id="repassword" />
+              <input type="password" placeholder="Şifrə" id="repassword" value={rePassword}
+              onChange={(e) => setRepassword(e.target.value)}/>
             </nav>
           </div>
         ) : null}
@@ -98,7 +108,9 @@ function Sign({ signType }) {
             }}
           />
         ) : signType === "up" ? (
-          <CommonBtn work="up" />
+          <CommonBtn work="up" onBtnClick={() => {
+            getUser("up");
+          }}/>
         ) : null}
 
         {signType === "in" ? (
