@@ -3,12 +3,12 @@ import { Button } from "react-bootstrap";
 import "../../../assets/styles/Common/Button/CommonBtn.scss";
 import { Link } from "react-router-dom";
 
-function CommonBtn({ work }) {
+function CommonBtn({ work,onBtnClick  }) {
   return (
-    <Button className="commonBtn" variant="link">
+    <Button className="commonBtn" variant="link" onClick={onBtnClick}>
       <Link
         className="commonbtnLink"
-        to={work === "passwordUpdate" ? "/passwordUpdateAccept" : work === 'entry' ? '/signin' : null}
+        to={work === "passwordUpdate" ? "/passwordUpdateAccept" : work === 'entry1' ? '/' : null}
       >
         {work === "send"
           ? "Göndər"

@@ -11,6 +11,23 @@ import ContactPage from "./pages/ContactPage";
 import Sign from "./pages/Sign";
 import PasswordUpdate from "./pages/PasswordUpdate";
 import Page404 from "./pages/Page404";
+export const userData = [
+  {
+    name: "Alisahib Mammadov",
+    email: "alisahib@mail.ru",
+    password: "alisahib123",
+  },
+  {
+    name: "Elnur Aliyev",
+    email: "elnur@mail.ru",
+    password: "elnur123",
+  },
+  {
+    name: "Qurban Haciyev",
+    email: "qurban@mail.ru",
+    password: "qurban123",
+  },
+];
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -22,22 +39,28 @@ function App() {
   });
 
   return (
-    <div className="App" >
+    <div className="App">
       <BrowserRouter>
-      <Navbar menu={menu} setMenu={setMenu} />
+        <Navbar menu={menu} setMenu={setMenu} />
         {menu === true ? (
           <NavbarMobileMenu menu={menu} setMenu={setMenu} />
-          ) : null}
+        ) : null}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/about" element={<AboutPage/>}/>
-          <Route path="/contact" element={<ContactPage/>}/>
-          <Route path='/signin' element={<Sign signType='in'/>}/>
-          <Route path='/signup' element={<Sign signType='up'/>}/>
-          <Route path='/passwordUpdateSend' element={<PasswordUpdate   updateType='send'/>}/>
-          <Route path='/passwordUpdateAccept' element={<PasswordUpdate updateType='accept'/>}/>
-          <Route path="/notFound" element={<Page404/>} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/signin" element={<Sign signType="in" userData={userData}/>} />
+          <Route path="/signup" element={<Sign signType="up" userData={userData}/>} />
+          <Route
+            path="/passwordUpdateSend"
+            element={<PasswordUpdate updateType="send" />}
+          />
+          <Route
+            path="/passwordUpdateAccept"
+            element={<PasswordUpdate updateType="accept" />}
+          />
+          <Route path="/notFound" element={<Page404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>

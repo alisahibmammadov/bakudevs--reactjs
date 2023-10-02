@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import GFB from "../components/Common/GoogleFb/GFB";
 import "../assets/styles/Sign/Sign.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CommonBtn from "../components/Common/Button/CommonBtn";
-import SignupBtn from "../components/Buttons/SignupBtn";
+import { userData } from "../App";
+// import SignupBtn from "../components/Buttons/SignupBtn";
 
 function Sign({ signType }) {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  console.log(email);
+  const [password, setPassword] = useState("");
+  console.log(password);
+  const getUser = (work) => {
+    if (work === "in") {
+      const user = userData.find(
+        (user) => user.email === email && user.password === password
+      );
+      console.log(user);
+    }
+  };
+
   return (
     <Container className="signpage-container">
       {signType === "in" ? <h2>Daxil olun</h2> : <h2>Qeydiyyatdan keçin</h2>}
@@ -29,14 +44,26 @@ function Sign({ signType }) {
           <label htmlFor="email">Email</label>
           <nav className="input">
             <i className="fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Email ünvanı" id="email" />
+            <input
+              type="email"
+              placeholder="Email ünvanı"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </nav>
         </div>
         <div className="label-input">
           <label htmlFor="password">Şifrə</label>
           <nav className="input">
             <i className="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Şifrə" id="password" />
+            <input
+              type="password"
+              placeholder="Şifrə"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </nav>
         </div>
         {signType === "up" ? (
@@ -62,7 +89,13 @@ function Sign({ signType }) {
         </div>
         {/* <CommonBtn work="entry" /> */}
         {signType === "in" ? (
-          <CommonBtn work="entry" />
+          <CommonBtn
+            work="entry"
+            onBtnClick={() => {
+              getUser("in");
+              navigate("/");
+            }}
+          />
         ) : signType === "up" ? (
           <CommonBtn work="up" />
         ) : null}
