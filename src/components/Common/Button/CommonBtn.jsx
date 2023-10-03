@@ -20,7 +20,11 @@ function CommonBtn({ work }) {
           ? "Qeydiyyatdan keç"
           : work === "save"
           ? "Yadda saxla"
-          : null} {" "}
+          : work === "subscribe"
+          ? "Abunə ol"
+          : work === "refresh"
+          ? "Yenilə"
+          : null}{" "}
         <i className="fa-solid fa-chevron-right"></i>
       </Link>
     </Button>
