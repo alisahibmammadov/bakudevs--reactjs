@@ -11,7 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import Sign from "./pages/Sign";
 import PasswordUpdate from "./pages/PasswordUpdate";
 import Page404 from "./pages/Page404";
-import PrivateCabinet from "./pages/PrivateCabinet";
+import PrivateCabinet from "./pages/privateCabinet/PrivateCabinet";
 
 
 function App() {
