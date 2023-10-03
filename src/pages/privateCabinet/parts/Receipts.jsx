@@ -1,8 +1,9 @@
 import React from 'react'
+import '../../../assets/styles/PrivateCabinet/parts/Receipts.scss'
 
 function Receipts() {
   return (
-    <div>Receipts</div>
+    <main className='private-receipts-container'></main>
   )
 }
 
