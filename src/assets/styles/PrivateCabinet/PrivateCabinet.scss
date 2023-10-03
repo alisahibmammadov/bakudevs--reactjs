@@ -1,8 +1,14 @@
 .private-cabinet-container {
-  padding: 50px 0;
+  padding: 50px ;
   margin-top: 100px;
   background: #fafdfd;
+  display: flex;
+  justify-content: space-between;
 
+  .private-cabinet-row {
+    display: flex;
+    justify-content: space-between;
+  }
   .private-cabinet-links-boxes {
     width: 248px;
     height: 357px;
@@ -69,15 +75,27 @@
           padding: 0;
           margin: 0;
         }
-        .active{
-          color: #008D96;
-font-family: Mulish;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+        .active {
+          color: #008d96;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
         }
       }
     }
   }
+  .private-cabinet-parts-boxes {
+    height: 100%;
+  }
 }
+
+@media only screen and (max-width: 765px) {
+  .private-cabinet-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+

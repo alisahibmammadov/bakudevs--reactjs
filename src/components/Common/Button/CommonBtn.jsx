@@ -18,7 +18,9 @@ function CommonBtn({ work }) {
           ? "Şifrəni yenilə"
           : work === "up"
           ? "Qeydiyyatdan keç"
-          : null}{" "}
+          : work === "save"
+          ? "Yadda saxla"
+          : null} {" "}
         <i className="fa-solid fa-chevron-right"></i>
       </Link>
     </Button>
