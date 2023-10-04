@@ -10,6 +10,12 @@ import AllCoursesBtn from "../Buttons/AllCoursesBtn";
 function HomeCoursesPage({ course }) {
   const [cardsType, setCardsType] = useState("all");
   const [atHome, setAtHome] = useState(true);
+  const [num, setNum] = useState(8);
+  useEffect(() => {
+    if (window.innerWidth < 450) {
+      setNum(6);
+    }
+  }, [num]);
   useEffect(() => {
     if (course === false) {
       setAtHome(false);
@@ -44,15 +50,18 @@ function HomeCoursesPage({ course }) {
       <Row className="home-courselist-row">
         <Col md={12}>
           <div className="home-courses-cards-list">
-            <Card atHome={atHome} cardData={cardData} cardsType={cardsType} />
+            <Card
+              atHome={atHome}
+              num={num}
+              cardData={cardData}
+              cardsType={cardsType}
+            />
           </div>
         </Col>
       </Row>
       <Row style={{ margin: "auto" }}>
         <Col md={11} xs={12} className="home-allcourses">
-          {
-            course === false ? null : <AllCoursesBtn />
-          }
+          {course === false ? null : <AllCoursesBtn />}
           {/* <AllCoursesBtn /> */}
         </Col>
       </Row>

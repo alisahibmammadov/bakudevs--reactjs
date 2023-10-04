@@ -8,8 +8,8 @@
   margin-left: 20px;
 }
 
-@media only screen and (max-width:768px){
-    .wishlist-container{
-        margin: 0;
-    }
-}
+@media only screen and (max-width: 768px) {
+  .wishlist-container {
+    margin: 0;
+  }
+}/*# sourceMappingURL=WishList.css.map */

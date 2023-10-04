@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../../assets/styles/Cards/Card.scss";
-
-function Card({ atHome, cardData, cardsType }) {
-  const [num,setNum] = useState(8)
-  useEffect(()=>{
-    if(window.innerWidth < 450){
-      setNum(6)
-    }
-  },[num])
+ 
+function Card({ atHome, cardData, cardsType,num }) {
+  // const [num,setNum] = useState(8)
+  // useEffect(()=>{
+  //   if(window.innerWidth < 450){
+  //     setNum(6)
+  //   }
+  // },[num])
 
   return (
     <>

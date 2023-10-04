@@ -3,9 +3,9 @@ import { Button } from "react-bootstrap";
 import "../../../assets/styles/Common/Button/CommonBtn.scss";
 import { Link } from "react-router-dom";
 
-function CommonBtn({ work }) {
+function CommonBtn({ work,handleClick }) {
   return (
-    <Button className="commonBtn" variant="link">
+    <Button className="commonBtn" variant="link" onClick={work === 'refresh' ? handleClick : null}>
       <Link
         className="commonbtnLink"
         to={work === "passwordUpdate" ? "/passwordUpdateAccept" : null}
