@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
@@ -13,7 +13,6 @@ import PasswordUpdate from "./pages/PasswordUpdate";
 import Page404 from "./pages/Page404";
 import PrivateCabinet from "./pages/privateCabinet/PrivateCabinet";
 
-
 function App() {
   const [menu, setMenu] = useState(false);
 
@@ -22,7 +21,6 @@ function App() {
       setMenu(false);
     }
   });
- 
 
   return (
     <div className="App">
@@ -36,14 +34,8 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route
-            path="/signin"
-            element={<Sign signType="in"  />}
-          />
-          <Route
-            path="/signup"
-            element={<Sign signType="up"  />}
-          />
+          <Route path="/signin" element={<Sign signType="in" />} />
+          <Route path="/signup" element={<Sign signType="up" />} />
           <Route
             path="/passwordUpdateSend"
             element={<PasswordUpdate updateType="send" />}
@@ -53,7 +45,7 @@ function App() {
             element={<PasswordUpdate updateType="accept" />}
           />
           <Route path="/notFound" element={<Page404 />} />
-          <Route path="/privateCabinet" element={<PrivateCabinet/>}/>
+          <Route path="/privateCabinet" element={<PrivateCabinet />} />
         </Routes>
         <Footer />
       </BrowserRouter>
