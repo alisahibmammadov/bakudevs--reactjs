@@ -1,35 +1,54 @@
+@import '../../../helpers/css/style.scss';
+@mixin flexbox(
+  $display,
+  $flex-direction,
+  $align-items,
+  $justify-content,
+  $gap
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+@mixin text-properties(
+  $font-family,
+  $line-height,
+  $text-decoration,
+  $color,
+  $font-size,
+  $font-weight
+) {
+  font-family: $font-family;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  color: var($color);
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin box-model($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
 .notFound-container {
+  @include flexbox(flex, column, center, center,30px );
   padding: 50px 0;
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
   > h2 {
-    color: #1b2221;
+    @include text-properties(Lora, 50px, initial, --dark-charcoal, 41px, 600px);
     text-align: center;
-    font-family: Lora;
-    font-size: 41px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 50px;
   }
   .notFund-img-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    @include flexbox(flex, column, center, initial,50px );
     > img {
       width: 90%;
     }
     .backHome {
-      color: #008d96;
-      font-family: Mulish;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @include text-properties(Mulish, normal, initial, --teal, 20px, 700);
+      @include flexbox(, -direction, -items, -content, )
       border-radius: 70px;
       border: 1px solid #008d96;
       background: transparent;
