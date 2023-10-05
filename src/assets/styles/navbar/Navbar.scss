@@ -3,13 +3,14 @@
 .section-navbar {
   .navbar-bg{
     position: fixed;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100vw;
     padding: 51px 0;
     background: 
     #e1f1f2;
     z-index: 998;
+    border-radius: 0 0 15px 15px;
   }
   .main-navbar {
     z-index: 999;
