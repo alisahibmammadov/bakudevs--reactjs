@@ -6,29 +6,34 @@ import SignupBtn from "../Buttons/SignupBtn";
 import LoginBtn from "../Buttons/LoginBtn";
 
 function Navbar({ menu, setMenu }) {
-  const [isScrolled, setIsScrolled] = useState(false);
-
+  
   const handleClick = () => {
     setMenu(!menu);
   };
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  function handleScroll() {
-    if (window.screenY > 0) {
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    checkScroll();
+  };
+  const checkScroll = () => {
+    const scrollHeight = window.scrollY;
+    const threshold = 100;
+    if (scrollHeight > threshold) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
     }
-  }
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  };
   return (
-    <section className={`section-navbar ${isScrolled ? "bg-white" : ""}`}>
+    <section className="section-navbar">
+      {isScrolled ? <div className="navbar-bg"></div> : null}
       <nav className="container main-navbar">
         <Link to="/">
           <img src={WebLogo} alt="WebSite Logo" className="web-logo" />

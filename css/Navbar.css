@@ -1,7 +1,12 @@
-.bg-white {
-  background: #ccc;
+.section-navbar .navbar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 51px 0;
+  background: #e1f1f2;
+  z-index: 998;
 }
-
 .section-navbar .main-navbar {
   z-index: 999;
   position: fixed;
@@ -107,6 +112,9 @@
   }
   .navbar__wishlist {
     display: none !important;
+  }
+  .navbar-bg {
+    padding: 40px 0 !important;
   }
 }
 .private-cabinet-link {

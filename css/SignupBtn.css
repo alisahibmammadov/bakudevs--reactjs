@@ -25,7 +25,6 @@
   .signup-btn {
     width: 150px !important;
     height: 40px !important;
-    border-radius: initial;
     font-size: 12px !important;
     gap: 4px !important;
   }
