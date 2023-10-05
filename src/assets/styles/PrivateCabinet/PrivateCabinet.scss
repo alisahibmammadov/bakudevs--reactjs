@@ -77,6 +77,6 @@
 
 @media only screen and (max-width: 765px) {
   .private-cabinet-container {
-    @include flexbox(flex, initial, center, initial, 20px);
+    @include flexbox(flex, column, center, initial, 20px);
   }
 }

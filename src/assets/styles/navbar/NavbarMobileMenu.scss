@@ -3,7 +3,7 @@ body {
   position: relative;
 }
 .navbar-mobile-menu {
-  z-index: 999;
+  z-index: 999999;
   @include flexbox(flex, column, flex-start, space-between, initial);
   min-width: 100vw;
   min-height: 100vh;

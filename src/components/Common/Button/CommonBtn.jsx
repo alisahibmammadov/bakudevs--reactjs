@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function CommonBtn({ work,handleClick }) {
   return (
-    <Button className="commonBtn" variant="link" onClick={work === 'refresh' ? handleClick : null}>
+    <Button className="commonBtn" variant="link">
       <Link
         className="commonbtnLink"
         to={work === "passwordUpdate" ? "/passwordUpdateAccept" : null}

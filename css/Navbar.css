@@ -9,7 +9,7 @@
   border-radius: 0 0 15px 15px;
 }
 .section-navbar .main-navbar {
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 50%;
