@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../src/assets/styles/PrivateCabinet/parts/WishList.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACI;IACI","file":"WishList.css"}
+{"version":3,"sourceRoot":"","sources":["../src/assets/styles/PrivateCabinet/parts/WishList.scss","../src/helpers/css/style.scss"],"names":[],"mappings":"AACA;ECOE,SDNiB;ECOjB,gBDPuB;ECQvB,aDRgC;ECShC,iBDTwC;ECUxC,KDVsD;EACtD;EACA;EACA;;;AAGF;EACE;IACE","file":"WishList.css"}

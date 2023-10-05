@@ -1,63 +1,48 @@
+@import "../../../../helpers/css/style.scss";
 .private-receipts-container {
-  display: flex;
+  @include flexbox(flex, initial, center, space-around, 20px);
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   padding: 20px 0;
-  gap: 20px;
   margin-left: 20px;
   .table {
-    width: 80%;
+    @include box-model(80%, 357px, 20px);
     min-width: 370px;
-    height: 357px;
-    border-radius: 20px;
     background: #fff;
     box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
     .table-head {
-      width: 100%;
-      height: 64px;
-      border-radius: 20px 20px 0px 0px;
+      @include box-model(100%, 64px, 20px 20px 0 0);
+      @include flexbox(flex, initial, center, space-around, initial);
       border: 1px solid #cae6e8;
       background: #ecf8f9;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
       h6 {
-        color: #008d96;
-        font-family: Mulish;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: normal;
+        @include text-properties(Mulish, normal, initial, --teal, 18px, 700);
       }
     }
     .table-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-        height: 293px;
-        border-radius:0 0 20px 20px;
-        padding: 20px 0;
+      @include flexbox(flex, column, center, space-between, initial);
+      flex-grow: 1;
+      height: 293px;
+      border-radius: 0 0 20px 20px;
+      padding: 20px 0;
       .body-row {
+        @include flexbox(flex, initial, center, space-around, initial);
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         p {
-          color: #1b2221;
-          font-family: Mulish;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+          @include text-properties(
+            Mulish,
+            normal,
+            initial,
+            --dark-charcoal,
+            18px,
+            500
+          );
         }
       }
     }
   }
 }
-@media only screen and (max-width:750px){
-    .private-receipts-container{
-        margin: 0;
-    }
+@media only screen and (max-width: 750px) {
+  .private-receipts-container {
+    margin: 0;
+  }
 }

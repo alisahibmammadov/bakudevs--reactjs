@@ -1,6 +1,4 @@
-// Mixin Start
 @import "../../../helpers/css/style.scss";
-// Mixin End
 .courses-btn {
   @include flexbox(flex, row, center, center, 10px);
   @include text-properties(Mulish, normal, none, --light-color, 20px, 700);

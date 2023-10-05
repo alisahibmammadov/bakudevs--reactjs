@@ -1,40 +1,32 @@
+@import "../../../helpers/css/style.scss";
 .gfb-main {
+  @include flexbox(flex, column, initial, initial, 20px);
   width: 419px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   .f-row {
-    width: 100%;
-    height: 60px;
+    @include box-model(100%, 60px, initial);
     position: relative;
     i {
+      @include box-model(60px, 100%, 8px 0 0 8px);
+      @include flexbox(flex, initial, center, center, initial);
       position: absolute;
-      width: 60px;
-      // height: 60px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       top: 0;
       left: 0;
-      border-radius: 8px 0px 0px 8px;
       background: #395185;
-
       color: #fff;
     }
     nav {
-      width: 100%;
-      height: 100%;
+      @include box-model(100%, 100%, 8px);
+      @include text-properties(
+        Mulish,
+        normal,
+        initial,
+        --list-color,
+        16px,
+        500
+      );
       display: flex;
       align-items: center;
-      color: #939393;
-      font-family: Mulish;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
       flex-shrink: 0;
-      border-radius: 8px;
       background: #f6f6f7;
       padding-left: 80px;
       outline: none;
@@ -43,35 +35,29 @@
   }
   .g-row {
     position: relative;
-    width: 100%;
-    height: 60px;
+    @include box-model(100%, 60px, initial);
     i {
+      @include box-model(60px, 100%, 8px 0 0 8px);
+      @include flexbox(flex, initial, center, center, initial);
       position: absolute;
       top: 0;
       left: 0;
-      width: 60px;
-      // height: 60px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px 0px 0px 8px;
       background: #e93e32;
       color: #fff;
     }
     nav {
-      width: 100%;
-      height: 100%;
-      color: #939393;
+      @include box-model(100%, 100%, 8px);
+      @include text-properties(
+        Mulish,
+        normal,
+        initial,
+        --list-color,
+        16px,
+        500
+      );
       display: flex;
       align-items: center;
-      font-family: Mulish;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
       flex-shrink: 0;
-      border-radius: 8px;
       background: #f6f6f7;
       padding-left: 80px;
       outline: none;

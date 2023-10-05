@@ -1,6 +1,4 @@
-// Mixin Start
 @import "../../../helpers/css/style.scss";
-// Mixin End
 .home-head {
   @include flexbox(flex, row, center, center, initial);
   @include box-model(100%, 100vh, default);
@@ -12,8 +10,6 @@
   }
   .home-head-row {
     margin-top: 100px 0 !important;
-    // display: flex !important;
-    // gap: 20px ;
   }
   .home-head-entry {
     h2 {

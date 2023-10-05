@@ -33,12 +33,14 @@
   color: var(--teal);
   font-size: 20px;
   font-weight: 700;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: initial;
+  gap: 17px;
   border-radius: 70px;
   border: 1px solid #008d96;
   background: transparent;
-  display: flex;
-  align-items: center;
-  gap: 17px;
   padding: 12px 35.71px;
 }
 .notFound-container .notFund-img-btn .backHome:hover {

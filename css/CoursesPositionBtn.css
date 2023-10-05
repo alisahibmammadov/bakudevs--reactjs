@@ -1,17 +1,16 @@
 .courses-position-btn {
   width: 136px;
   height: 45px;
-  flex-shrink: 0;
-  text-decoration: none;
   border-radius: 8px;
-  border: 1px solid var(--teal);
-  color: #008d96;
-  text-align: center;
   font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
   line-height: normal;
+  text-decoration: none;
+  color: var(--teal);
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+  border: 1px solid var(--teal);
+  text-align: center;
 }
 .courses-position-btn:hover {
   background: var(--teal-hover);

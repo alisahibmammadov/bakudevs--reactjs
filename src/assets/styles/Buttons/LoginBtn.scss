@@ -1,6 +1,4 @@
-// Mixin Start
 @import "../../../helpers/css/style.scss";
-// Mixin End
 .login-btn {
   @include flexbox(flex, row, center, center, 6px);
   @include text-properties(Mulish, normal, none, --teal, 16px, 700);
@@ -16,8 +14,7 @@
 
 @media only screen and (max-width: 990px) {
   .login-btn {
-    width: 90px !important;
-    height: 40px !important;
+    @include box-model(90px !important, 40px !important, initial);
     font-size: 12px !important;
     gap: 4px !important;
   }

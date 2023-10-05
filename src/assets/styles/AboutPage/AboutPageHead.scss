@@ -1,3 +1,4 @@
+@import "../../../helpers/css/style.scss";
 .about-head-container {
   padding: 80px 0;
   display: flex;
@@ -8,16 +9,12 @@
     margin: 0 !important;
     .about-head-left {
       width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      // flex-shrink: 0;
-      //   background: red;
+      @include flexbox(flex, row, initial, flex-start, initial);
+
       .about-head-left__border {
+        @include box-model(457px, 348px, 20px);
         position: relative;
-        border-radius: 20px;
         border: 1px solid #008d96;
-        width: 457px;
-        height: 348px;
         flex-shrink: 1;
         img {
           position: absolute;
@@ -34,20 +31,24 @@
       flex-direction: column;
       gap: 25px;
       h2 {
-        color: #1b2221;
-        font-family: Lora;
-        font-size: 41px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 50px; /* 121.951% */
+        @include text-properties(
+          Lora,
+          50px,
+          initial,
+          --dark-charcoal,
+          41px,
+          600
+        );
       }
       p {
-        color: #939393;
-        font-family: Mulish;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px; /* 166.667% */
+        @include text-properties(
+          Mulish,
+          30px,
+          initial,
+          --list-color,
+          18px,
+          500
+        );
         width: 90%;
       }
     }
@@ -102,7 +103,3 @@
     }
   }
 }
-
-// *{
-//     outline: 1px solid green;
-// }

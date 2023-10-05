@@ -1,7 +1,7 @@
+@import "../../../helpers/css/style.scss";
 .private-cabinet-container {
-  padding: 50px ;
+  padding: 50px;
   margin-top: 100px;
-  // background: #fafdfd;
   display: flex;
   justify-content: space-between;
 
@@ -10,93 +10,73 @@
     justify-content: space-between;
   }
   .private-cabinet-links-boxes {
-    width: 248px;
-    height: 357px;
+    @include box-model(248px, 357px, 20px);
     flex-shrink: 0;
-    border-radius: 20px;
     background: #fff;
     box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
     header {
-      width: 248px;
-      height: 64px;
+      @include box-model(248px, 64px, 20px 20px 0 0);
+      @include flexbox(flex, initial, center, center, initial);
       flex-shrink: 0;
-      border-radius: 20px 20px 0px 0px;
       background: #008d96;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       h6 {
-        color: #fff;
-        font-family: Mulish;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include text-properties(
+          Mulish,
+          normal,
+          initial,
+          --light-color,
+          20px,
+          700
+        );
       }
     }
     .btn-boxes {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
+      @include flexbox(flex, column, center, center, 15px);
       flex-grow: 1;
       height: 81%;
       border-radius: 20px;
 
       button {
+        @include flexbox(flex, initial, center, left, initial);
+        @include box-model(100%, 40px, 0);
         background: transparent;
-        border-radius: 0;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        height: 40px;
-        width: 100%;
         padding-left: 50px;
         position: relative;
         border: transparent;
         span {
+          @include box-model(5px, 100%, initial);
           position: absolute;
-          height: 100%;
-          width: 5px;
           top: 0;
           left: 0;
           background: #008d96;
         }
         p {
+          @include text-properties(
+            Mulish,
+            normal,
+            initial,
+            --list-color,
+            20px,
+            500
+          );
           display: flex;
           gap: 10px;
-          color: #939393;
-          font-family: Mulish;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
           padding: 0;
           margin: 0;
         }
         .active {
-          color: #008d96;
-          font-family: Mulish;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
+          @include text-properties(Mulish, normal, initial, --teal, 20px, 700);
         }
       }
     }
   }
   .private-cabinet-parts-boxes {
-    // height: 100%;
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 765px) {
-  .private-cabinet-container{
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .private-cabinet-container {
+    @include flexbox(flex, initial, center, initial, 20px);
   }
 }
-

@@ -1,6 +1,4 @@
-// Mixin Start
 @import "../../../helpers/css/style.scss";
-// Mixin End
 .main-card {
   @include box-model(270px, 347px, 20px);
   @include flexbox(flex, column, center, flex-start, initial);

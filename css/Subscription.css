@@ -1,15 +1,17 @@
 .private-subscription-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: initial;
   align-items: center;
-  padding: 20px 0;
+  justify-content: space-around;
   gap: 20px;
+  padding: 20px 0;
   margin-left: 20px;
 }
 .private-subscription-container .subscribe {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: initial;
   gap: 30px;
   width: 338px;
 }
@@ -24,51 +26,54 @@
   padding-left: 24px;
 }
 .private-subscription-container .subscribe .warning span {
-  color: #c89f9f;
   font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(#c89f9f);
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 130% */
 }
 .private-subscription-container .subscribe .info {
+  font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(--list-color);
+  font-size: 20px;
+  font-weight: 600;
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #939393;
-  font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px; /* 130% */
 }
 .private-subscription-container .refresh {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: initial;
   gap: 30px;
 }
 .private-subscription-container .refresh .info {
+  font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(--list-color);
+  font-size: 20px;
+  font-weight: 600;
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #939393;
-  font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px; /* 130% */
 }
 .private-subscription-container .refresh .exclamation {
   display: flex;
-  gap: 10px;
+  flex-direction: initial;
   align-items: center;
-  color: #c89f9f;
+  justify-content: initial;
+  gap: 10px;
   font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(#c89f9f);
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 130% */
 }
 
 @media only screen and (max-width: 992px) {
@@ -99,15 +104,18 @@ body {
 }
 
 .modal-main {
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: center;
+  gap: initial;
+  width: 100vw;
+  height: 100vh;
+  border-radius: initial;
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 100vw;
-  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .xmark {
@@ -122,43 +130,48 @@ body {
 }
 
 .refresh-modal {
-  position: relative;
   width: 614px;
   height: 418px;
-  flex-shrink: 0;
   border-radius: 20px;
-  background: #fff;
-  box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
-  padding: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: initial;
+  position: relative;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
+  padding: 45px;
 }
 .refresh-modal .head p {
-  color: #939393;
   font-family: Mulish;
+  line-height: 26px;
+  text-decoration: initial;
+  color: var(--list-color);
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 144.444% */
 }
 .refresh-modal .price-checkbox {
   width: 100%;
 }
 .refresh-modal .price-checkbox .price-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: initial;
   align-items: center;
+  justify-content: space-between;
+  gap: initial;
   padding: 10px 0;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
 }
 .refresh-modal .price-checkbox .price-row:nth-child(3) {
   border: transparent;
 }
 .refresh-modal .price-checkbox .price-row .label-input {
   display: flex;
+  flex-direction: initial;
   align-items: center;
+  justify-content: initial;
   gap: 10px;
 }
 .refresh-modal .price-checkbox .price-row .label-input input {
@@ -169,19 +182,19 @@ body {
   stroke: #939393;
 }
 .refresh-modal .price-checkbox .price-row .label-input label {
-  color: #1b2221;
   font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  text-decoration: initial;
+  color: var(--dark-charcoal);
+  font-size: 18px;
+  font-weight: 500;
 }
 .refresh-modal .price-checkbox .price-row p {
-  color: #1b2221;
   font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
   line-height: normal;
+  text-decoration: initial;
+  color: var(--dark-charcoal);
+  font-size: 18px;
+  font-weight: 500;
   margin: 0;
 }/*# sourceMappingURL=Subscription.css.map */

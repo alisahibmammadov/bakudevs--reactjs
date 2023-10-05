@@ -1,5 +1,4 @@
 @import "../.././../helpers/css/style.scss";
-
 .courses-position-btn {
   @include box-model(136px, 45px, 8px);
   @include text-properties(Mulish, normal, none, --teal, 18px, 600);

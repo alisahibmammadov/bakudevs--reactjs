@@ -1,16 +1,8 @@
+@import '../../../../helpers/css/style.scss';
 .commonBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 11px;
+  @include flexbox(flex, initial, center, center, 11px);
+  @include text-properties(Mulish, normal, none, --light-color, 20px, 700);
   background: #008d96;
-  color: #fff;
-  font-family: Mulish;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration: none;
   padding: 11px 50.7px;
   .commonbtnLink{
     text-decoration: none;

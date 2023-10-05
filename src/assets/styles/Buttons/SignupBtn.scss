@@ -1,8 +1,5 @@
-// Mixin Start
+
 @import "../../../helpers/css/style.scss";
-
-// Mixin End
-
 .signup-btn {
   @include flexbox(flex, row, center, center, 5px);
   @include text-properties(Mulish, normal, none, --light-color, 16px, 700);
@@ -17,8 +14,7 @@
 
 @media only screen and (max-width: 990px) {
   .signup-btn {
-    width: 150px !important;
-    height: 40px !important;
+    @include box-model(150px !important, 40px !important,initial);
     font-size: 12px !important;
     gap: 4px !important;
   }

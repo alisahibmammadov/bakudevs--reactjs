@@ -1,6 +1,4 @@
-// Mixin Start
 @import "../../../helpers/css/style.scss";
-// Mixin End
 .main-footer {
   .footer-container {
     @include flexbox(flex, column, initial, initial, 100px);

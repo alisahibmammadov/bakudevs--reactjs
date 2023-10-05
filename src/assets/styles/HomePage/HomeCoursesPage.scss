@@ -1,17 +1,12 @@
 @import "../../../helpers/css/style.scss";
-// *{
-//   outline: 1px solid red;
-// }
 .main-home-course {
-  @include flexbox(flex,column,initial,center,initial);
+  @include flexbox(flex, column, initial, center, initial);
   padding: 100px 0;
-
 }
-.home-courseshead-row{
+.home-courseshead-row {
   width: 100%;
   margin: auto;
-  @include flexbox(flex,initial,center,space-evenly,initial);
-
+  @include flexbox(flex, initial, center, space-evenly, initial);
 }
 
 .home-courses-head {
@@ -31,20 +26,19 @@
   @include flexbox(flex, row, center, space-between, 20px);
   flex-wrap: wrap;
 }
-.home-courselist-row{
+.home-courselist-row {
   margin: auto;
 }
 .home-allcourses {
   margin: auto;
   width: 90%;
   @include flexbox(flex, row, center, center, initial);
-  
 }
-@media only screen and (max-width: 450px){
-  .home-courses-cards-list{
+@media only screen and (max-width: 450px) {
+  .home-courses-cards-list {
     justify-content: center !important;
   }
-  .home-courses-head{
+  .home-courses-head {
     text-align: center !important;
   }
   .home-courses-head-btns {
@@ -54,16 +48,13 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 768px){
-  .home-courses-cards-list{
+@media only screen and (max-width: 768px) {
+  .home-courses-cards-list {
     justify-content: center !important;
   }
-  .home-courses-head{
+  .home-courses-head {
     text-align: center !important;
   }
-  // .home-courses-head-btns {
-  //   justify-content: center !important;
-  // }
   .home-allcourses {
     width: 100%;
   }

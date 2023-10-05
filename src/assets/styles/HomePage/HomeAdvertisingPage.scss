@@ -1,6 +1,4 @@
-// Mixin Start
 @import "../../../helpers/css/style.scss";
-// Mixin End
 .main-advertising {
   background: #e3f1f2;
   padding: 120px 20px;
@@ -121,9 +119,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
-    .main-advertising {
-        padding: 60px 20px;
-    }
+  .main-advertising {
+    padding: 60px 20px;
+  }
   .advertising-head {
     h2 {
       font-size: 31px !important;
@@ -158,9 +156,9 @@
   }
 }
 @media only screen and (max-width: 320px) {
-    .main-advertising {
-        padding: 40px 20px;
-    }
+  .main-advertising {
+    padding: 40px 20px;
+  }
   .advertising-head {
     h2 {
       font-size: 16px !important;

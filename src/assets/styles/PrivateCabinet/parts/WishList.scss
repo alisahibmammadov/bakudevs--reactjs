@@ -1,15 +1,13 @@
+@import "../../../../helpers/css/style.scss";
 .wishlist-container {
-  display: flex;
+  @include flexbox(flex, initial, center, space-around, 20px);
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   padding: 20px 0;
-  gap: 20px;
   margin-left: 20px;
 }
 
-@media only screen and (max-width:768px){
-    .wishlist-container{
-        margin: 0;
-    }
+@media only screen and (max-width: 768px) {
+  .wishlist-container {
+    margin: 0;
+  }
 }

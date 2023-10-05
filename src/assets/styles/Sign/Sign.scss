@@ -1,26 +1,14 @@
+@import "../../../helpers/css/style.scss";
 .signpage-container {
+  @include flexbox(flex, column, center, center, 30px);
   padding: 50px 0;
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
   > h2 {
-    color: #1b2221;
+    @include text-properties(Lora, 50px, initial, --dark-charcoal, 41px, 600);
     text-align: center;
-    font-family: Lora;
-    font-size: 41px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 50px;
   }
   .sign-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 30px;
+    @include flexbox(flex, column, center, space-around, 30px);
     padding: 38px 0;
     width: 519px;
     flex-shrink: 0;
@@ -28,21 +16,20 @@
     background: #fff;
     box-shadow: 0px 30px 60px 0px rgba(1, 94, 100, 0.2);
     .label-input {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+      @include flexbox(flex, column, initial, initial, 15px);
       width: 419px;
       label {
-        color: #1b2221;
-        font-family: Mulish;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include text-properties(
+          Mulish,
+          normal,
+          initial,
+          --dark-charcoal,
+          20px,
+          700
+        );
       }
       .input {
-        width: 100%;
-        height: 60px;
+        @include box-model(100%, 60px, initial);
         position: relative;
         i {
           position: absolute;
@@ -53,15 +40,15 @@
           font-size: 1.2rem;
         }
         input {
-          width: 100%;
-          height: 100%;
-          color: #939393;
-          font-family: Mulish;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          border-radius: 8px;
+          @include box-model(100%, 100%, 8px);
+          @include text-properties(
+            Mulish,
+            normal,
+            initial,
+            --list-color,
+            16px,
+            500
+          );
           background: #f6f6f7;
           outline: none;
           border: transparent;
@@ -71,63 +58,54 @@
       }
     }
     .checkbox-save {
+      @include flexbox(flex, initial, center, space-between, initial);
       width: 419px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       nav {
-        display: flex;
-        align-items: center;
-        gap: 13px;
+        @include flexbox(flex, initial, center, initial, 13px);
         input {
-          border-radius: 4px;
+          @include box-model(19px, 19px, 4px);
           border: 1px solid #939393;
-          width: 19px;
-          height: 19px;
           flex-shrink: 0;
           outline: none;
         }
         label {
-          color: #939393;
-          font-family: Mulish;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+          @include text-properties(
+            Mulish,
+            normal,
+            initial,
+            --list-color,
+            16px,
+            500
+          );
         }
       }
       .forget-link {
-        color: #1b2221;
+        @include text-properties(
+          Mulish,
+          normal,
+          none,
+          --dark-charcoal,
+          16px,
+          500
+        );
         text-align: right;
-        font-family: Mulish;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        text-decoration: none;
       }
     }
     .signup-link {
-      display: flex;
-      align-items: center;
-      gap: 18px;
+      @include flexbox(flex, initial, center, initial, 18px);
       label {
-        color: #939393;
-        font-family: Mulish;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+        @include text-properties(
+          Mulish,
+          normal,
+          initial,
+          --list-color,
+          16px,
+          500
+        );
       }
       .signup {
-        color: #008d96;
+        @include text-properties(Mulish, normal, none, --teal, 16px, 500);
         text-align: right;
-        font-family: Mulish;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        text-decoration: none;
       }
     }
   }
