@@ -55,7 +55,6 @@ function Navbar({ menu, setMenu }) {
         <div className="navbar__btn-boxes">
           <LoginBtn />
           <SignupBtn />
-          <Link to='/privateCabinet'>cabinet</Link>
         </div>
 
         <div className="menu-icon-box" onClick={handleClick}>

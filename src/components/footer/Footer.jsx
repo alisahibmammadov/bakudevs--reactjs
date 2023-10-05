@@ -26,17 +26,20 @@ function Footer() {
           </Col>
           <Col md={3}>
             <ul>
-              <Link to='/' className="router-link">
+              <Link to="/" className="router-link">
                 <li>Əsas səhifə</li>
               </Link>
-              <Link to='/courses' className="router-link" >
+              <Link to="/courses" className="router-link">
                 <li>Kurslar</li>
               </Link>
-              <Link to='/about' className="router-link">
+              <Link to="/about" className="router-link">
                 <li>Haqqımızda</li>
               </Link>
-              <Link to='/contact' className="router-link">
+              <Link to="/contact" className="router-link">
                 <li>Əlaqə</li>
+              </Link>
+              <Link to="/privateCabinet" className="router-link">
+                <li>cabinet</li>
               </Link>
             </ul>
           </Col>
