@@ -118,6 +118,7 @@ body {
 .xmark i {
   color: #939393;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .refresh-modal {
@@ -129,6 +130,10 @@ body {
   background: #fff;
   box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
   padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .refresh-modal .head p {
   color: #939393;
@@ -138,11 +143,18 @@ body {
   font-weight: 500;
   line-height: 26px; /* 144.444% */
 }
+.refresh-modal .price-checkbox {
+  width: 100%;
+}
 .refresh-modal .price-checkbox .price-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  border-bottom: 1px solid #E3E3E3;
+}
+.refresh-modal .price-checkbox .price-row:nth-child(3) {
+  border: transparent;
 }
 .refresh-modal .price-checkbox .price-row .label-input {
   display: flex;

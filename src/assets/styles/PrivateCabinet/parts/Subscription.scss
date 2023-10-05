@@ -98,7 +98,7 @@ body {
 }
 .modal-main {
   position: absolute;
-  top: 0%;
+  top:0%;
   left: 0%;
   width: 100vw;
   height: 100vh;
@@ -114,6 +114,7 @@ body {
   i {
     color: #939393;
     font-size: 1rem;
+    cursor: pointer;
   }
 }
 .refresh-modal {
@@ -125,6 +126,10 @@ body {
   background: #fff;
   box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
   padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   .head {
     p {
       color: #939393;
@@ -136,11 +141,16 @@ body {
     }
   }
   .price-checkbox {
+    width: 100%;
     .price-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px 0;
+      border-bottom: 1px solid #E3E3E3;
+      &:nth-child(3){
+        border: transparent;
+      }
       .label-input {
         display: flex;
         align-items: center;

@@ -7,12 +7,10 @@ function Subscription() {
 
   const handleClick = () => {
     setModal(true);
-    // Modal açıldığında sayfanın kaydırılmasını engelle
     document.body.style.overflow = "hidden";
   };
   const closeModal = () => {
     setModal(false);
-    // Modal kapatıldığında sayfanın kaydırılmasını yeniden etkinleştir
     document.body.style.overflow = "auto";
   };
   return (
@@ -40,7 +38,7 @@ function Subscription() {
         {modal ? (
           <main className="modal-main">
             <div className="refresh-modal">
-              <div className="xmark" onClick={() => setModal(false)}>
+              <div className="xmark" onClick={closeModal}>
                 <i className="fa-solid fa-xmark"></i>
               </div>
               <div className="head">
@@ -72,7 +70,9 @@ function Subscription() {
                   <p>Məbləğ: 30 AZN</p>
                 </div>
               </div>
-              <div></div>
+              <div>
+                <CommonBtn work='refresh'/>
+              </div>
             </div>
           </main>
         ) : null}
